@@ -1,3 +1,4 @@
+import React from 'react'
 import {
     Container,  
     Hero,
@@ -48,7 +49,7 @@ import livro from '../../assets/livro.webp'
 import globo from '../../assets/globo.webp'
 import exame from '../../assets/exame.webp'
 import teste from '../../assets/teste.webp'
-import landerson from '../../assets/Landerson.jpg'
+import landerson from '../../assets/Landerson.webp'
 import { Button } from "../../Button"
 import { Header } from "../../Header"
 import { Foot } from "../../Foot"
@@ -85,7 +86,29 @@ export function Home(){
             </Block>
        </Hero>
 
-       <Content>
+       <Depoiments>
+            <Block>
+                <TitleClassTwo><h1>Depoimentos</h1></TitleClassTwo>
+                <Person>
+                    <BlockFive>
+                        <Block>
+                            <TitleClass><h1>Landerson Miguel</h1></TitleClass>
+                            <SubTitleTwo><h1>“Ótimos professores e excelentes aulas. Realizei meu sonho de falar inglês!”</h1></SubTitleTwo>
+                            <Stars>
+                            <IconStar/> 
+                            <IconStar/> 
+                            <IconStar/> 
+                            <IconStar/> 
+                            <IconStar/> 
+                            </Stars>
+                        </Block>
+                        <ImagePerson alt="Landerson Miguel" src={landerson}/>
+                    </BlockFive>
+                </Person>
+            </Block>
+        </Depoiments>
+
+       <Content>    
         <BlockSeven>
             <Block>
             <FirstContent>
@@ -101,19 +124,25 @@ export function Home(){
                     <Image src={estudando} alt="garota estudando inglês"/>
                 </BlockImage>     
             </FirstContent>
+
             <FirstContent>
-            <BlockImageTwo>
-                 <Image src={educacao} alt="certificados e diplomas internacionais"/>
-            </BlockImageTwo>
+                <BlockImageTwo>
+                    <Image src={educacao} alt="certificados e diplomas internacionais"/>
+                </BlockImageTwo>
+
                 <TextBlock>
-                    <TitleBlue>
-                        <h1>Com professores certificados internacionalmente!</h1>
-                    </TitleBlue>
-                    <SubTitleBlue>
-                        <h1>A Cre8 possui professores com mais de 5 anos de experiência, com certificação na University of Cambridge,  Arizona State University e Bridge Education Group. Quer saber mais? veja mais sobre nossa equipe.</h1>
-                    </SubTitleBlue>
+                    <BlockSix>
+                        <TitleBlue>
+                            <h1>Com professores certificados internacionalmente!</h1>
+                        </TitleBlue>
+                        <SubTitleBlue>
+                            <h1>A Cre8 possui professores com mais de 5 anos de experiência, com certificação na University of Cambridge,  Arizona State University e Bridge Education Group. Quer saber mais? veja mais sobre nossa equipe.</h1>
+                        </SubTitleBlue>
+                    </BlockSix>
                 </TextBlock>
+               
             </FirstContent>
+
             <FirstContent>
                 <TextBlock>
                     <TitleOt>
@@ -199,52 +228,6 @@ export function Home(){
             </Block>
         </Curses>
 
-        <Depoiments>
-            <Block>
-                <TitleClassTwo><h1>Depoimentos</h1></TitleClassTwo>
-                <Person>
-                    <BlockFive>
-                        <Block>
-                            <TitleClass><h1>Landerson Miguel</h1></TitleClass>
-                            <SubTitleTwo><h1>“Ótimos professores e excelentes aulas. Realizei meu sonho de falar inglês!”</h1></SubTitleTwo>
-                            <Stars>
-                            <IconStar/> 
-                            <IconStar/> 
-                            <IconStar/> 
-                            <IconStar/> 
-                            <IconStar/> 
-                            </Stars>
-                        </Block>
-                        <ImagePerson src={landerson}/>
-                    </BlockFive>
-                </Person>
-            </Block>
-        </Depoiments>
-
-        <Mission>
-            <Block>
-                <TitleOt> <h1>Nossa missão</h1> </TitleOt>
-                <BlockSix>
-                    <SubTitleBlueTwo>
-                            <h1>A Cre8 conta com aulas diversificados que melhor se 
-                                adequam à situação de cada aluno!Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. Nunc vulputate libero et velit interdum, 
-                                ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent 
-                                per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis
-                                condimentum lobortis.</h1>
-                    </SubTitleBlueTwo>
-
-                    <SubTitleBlueTwo>
-                            <h1>A Cre8 conta com aulas diversificados que melhor se 
-                                adequam à situação de cada aluno!Lorem ipsum dolor sit amet, 
-                                consectetur adipiscing elit. Nunc vulputate libero et velit interdum, 
-                                ac aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent 
-                                per conubia nostra, per inceptos himenaeos. Curabitur tempus urna at turpis
-                                condimentum lobortis.</h1>
-                    </SubTitleBlueTwo>
-                </BlockSix>
-            </Block>
-        </Mission>
         <Foot/>
 
     </Container>

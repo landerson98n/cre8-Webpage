@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Container = styled.div`
+export const Container = styled.button`
     background-color: var(--button_color) ;
     display: flex;
     width: 386px;
@@ -20,7 +20,7 @@ export const Container = styled.div`
     @media only screen and (max-width: 320px) {
       width: 260px;
       height: 39px;
-  }
+    }
  `; 
 
 export const Text = styled.div`

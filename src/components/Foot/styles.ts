@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 71px;
-  background-color: #2B69DB;
+  background-color: var(--background_blue);
   @media only screen and (max-width: 425px) {
     height: 30px;
   }

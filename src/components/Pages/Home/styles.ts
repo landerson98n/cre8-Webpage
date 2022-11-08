@@ -36,8 +36,8 @@ export const Hero = styled.div`
     display: grid;
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 10%;
+    padding-right: 10%;
     @media only screen and (max-width: 1196px) {
       height: 540px;
     }
@@ -144,7 +144,7 @@ export const TitleTwo = styled.div`
 `
 
 export const TitleBlue = styled.div`
-  max-width: 900px;
+  width: 100%;
   & h1{
       font-family: 'Baloo 2';
       font-size: 6rem;
@@ -176,8 +176,7 @@ export const TitleBlue = styled.div`
     display: table-header-group;
   }
 `
-export const TitleOt= styled.div`
-  max-width: 500px;
+export const TitleOt= styled.div` 
   margin-bottom: 20px;
   & h1{
       font-family: 'Baloo 2';
@@ -208,9 +207,9 @@ export const TitleOt= styled.div`
 
 export const BlockImage = styled.div`
   width: 100%;
-  margin-left: 8%;
+  display: flex;
+  justify-content: end;
   @media only screen and (max-width: 425px) {
-    margin-left: 0%;
     display: table-row-group;
     display: flex;
     justify-content: center;
@@ -267,6 +266,8 @@ export const SubTitle = styled.div`
 
 export const  BlockImageTwo = styled.div`
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
   @media only screen and (max-width: 425px) {
     display: table-row-group;
     display: flex;
@@ -310,7 +311,7 @@ export const SubTitleTwo = styled.div`
 `
 
 export const SubTitleBlue = styled.div`
-  max-width: 700px;
+  width: 100%;
   & h1{
       font-family: 'Be Vietnam Pro';
       font-size: 3rem;
@@ -378,8 +379,8 @@ export const Content = styled.div`
   align-items: center;
   margin-top: 10rem;
   background-color: white;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  padding-left: 10%;
+  padding-right: 10%;
   justify-content: space-between;
   @media only screen and (max-width: 1196px) {
     margin-top: 5rem;
@@ -390,8 +391,9 @@ export const Content = styled.div`
   }
   @media only screen and (max-width: 375px) {
     padding-left: 3rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
+  
 `
 
 export const Image = styled.img`
@@ -477,8 +479,8 @@ export const  Schedule = styled.div`
   background-color: var(--schedule);
   width: 100%;
   height: 567px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
   @media only screen and (max-width: 947px) {
       height: 367px;
   }
@@ -515,7 +517,6 @@ export const BlockSeven = styled.div`
 export const BlockThree = styled.div`
   margin-top: 50px;
   width: 100%;
-  max-width: 1280px;
 `
 export const BlockFour = styled.div`
   margin-top: 70px;
@@ -547,27 +548,26 @@ export const Curses = styled.div`
   justify-items: center;
   background-color: white;
   width: 100%;
-  max-width: 1280px;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
   margin-top: 5%;
+  margin-bottom: 5%;
   @media only screen and (max-width: 425px) {
     padding-left: 5rem;
     padding-right: 5rem;
     height: 800px;
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 375px) {
     padding-left: 3rem;
     padding-right: 2.5rem;
   }
-  @media only screen and (max-width: px) {
+  @media only screen and (max-width: 320px) {
     height: 760px;
   }
 `
 export const  ClassOne = styled.div`
   background-color: #F4D35E;
   width: 100%;
-  max-width: 1080px;
   height: 590px;
   border-radius: 43px;
   justify-content: center;
@@ -662,11 +662,7 @@ export const Foot = styled.div`
 `
 export const BlockSix = styled.div`
   width: 100%;
-  display: flex;
-  justify-content: center;
-  @media only screen and (max-width: 320px) {
-    display: block;
-  }
+  padding-left: 4%;
 `
 export const  TitleClassTwo = styled.div`
     width: 100%;
@@ -675,7 +671,7 @@ export const  TitleClassTwo = styled.div`
       font-family: 'Baloo 2';
       font-size: 7rem;
       font-weight: 700;
-      color: white;
+      color: #71A7ED;
       text-align: left;
     }
     @media only screen and (max-width: 1196px) {
@@ -734,7 +730,6 @@ export const Lista = styled.div`
 export const ClassTwo = styled.div`
   background-color: #E15C54;
   width: 100%;
-  max-width: 1080px;
   height: 590px;
   border-radius: 43px;
   justify-content: center;
@@ -757,7 +752,6 @@ export const ClassTwo = styled.div`
 export const ClassThree = styled.div`
   background-color: #2B69DB;
   width: 100%;
-  max-width: 1080px;
   height: 590px;
   border-radius: 43px;
   justify-content: center;
@@ -782,24 +776,24 @@ export const ImageTwo = styled.img`
 `
 export const Depoiments = styled.div`
   width: 100%;
-  background-color: #2A6CC4;
-  height: 884px;
-  padding-left: 100px;
-  padding-right: 100px;
+  height: 684px;
+  padding-left: 10%;
+  padding-right: 10%;
   margin-top: 120px;
+  margin-bottom: 12%;
   display: flex;
   justify-content: center;
   align-items: center;
   @media only screen and (max-width: 1196px) {
-    height: 684px;
+    height: 484px;
   }
   @media only screen and (max-width: 907px) {
-    height: 484px;
+    height: 284px;
   }
   @media only screen and (max-width: 425px) {
     padding-left: 5rem;
     padding-right: 5rem;
-    height: 280px;
+    height: 180px;
     margin-top: 10%;
   }
   @media only screen and (max-width: 425px) {

@@ -17,7 +17,6 @@ export default createGlobalStyle`
   *, button, input {
     border: 0;
     background: none;
-    font-family: 'Montserrat', -apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
   }
   :root {
       --header: #2B69DB;
