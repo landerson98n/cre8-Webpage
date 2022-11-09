@@ -11,45 +11,74 @@ import{
     TextMenu,
     BlockTwo,
     IconX,
-    BlockThree
+    BlockThree,
+    Blockv,
+    Blockx
 } from './styles'
 import LogoBranca from "../assets/logo_branca.webp"
 import { useState } from 'react'
+import { motion } from "framer-motion";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 export function Header(){
     const [show, setShow] = useState(false)
     return(
+
         <Container>
-               <Link to={`/`}><Logo src={LogoBranca} alt="Logo Cre8"/></Link> 
-                    <Block>
+                <motion.div whileHover={{scale:1.07}} whileTap={{scale:1.1}}><Link to={`/`}><Blockv><Logo src={LogoBranca} alt="Logo Cre8"/></Blockv></Link> </motion.div>
+                <Block>
                         <Text>
-                            <Link to={`/`}>Início</Link>
-                            <Link to={`/Equipe`}>Equipe</Link>
-                            <Link to={`/About`}>Sobre</Link>
+                            <motion.div
+                                whileHover={{scale:1.08}}
+                                whileTap={{scale:1.09}}
+                            >
+                                <Link to={`/`}>Início</Link>
+                                </motion.div>
+                                <motion.div
+                                whileHover={{scale:1.08}}
+                                whileTap={{scale:1.09}}
+                            ><Link to={`/Equipe`}>Equipe</Link></motion.div>
+                            <motion.div
+                                whileHover={{scale:1.08}}
+                                whileTap={{scale:1.09}}
+                            ><Link to={`/About`}>Sobre</Link></motion.div>
                         </Text>
                         <a href='https://www.instagram.com/cre8language/' ><IconInsta sx={{ fontSize: 30 }}/> </a> 
-                    </Block>
-                    {show?  
-                    <Menu>
-                        <BlockTwo>
-                            <BlockThree>
-                            <IconX sx={{ fontSize: 40 }} onClick={()=>{setShow(false)}}/>
-                            </BlockThree>
-                            <TextMenu style={{marginTop:0}}> 
-                                <Link to="/">Início</Link>
-                            </TextMenu>
-                            <TextMenu>
-                                <Link to="/Equipe">Equipe</Link>
-                            </TextMenu>
-                            <TextMenu>
-                                <Link to="/About">Sobre</Link>
-                            </TextMenu>  
-                        </BlockTwo>
-                    </Menu> 
-                    :
-                    <BlockMenu>
-                        <IconMenu sx={{ fontSize: 40 }} onClick={()=>{setShow(true)}}/>
-                    </BlockMenu>}
+                </Block>
+                        <Blockx 
+                            as={motion.div} 
+                            animate={{x:show?0:300, opacity:show?1:0}}
+                            transition={{
+                                duration:0.5,
+                            }}
+                        >
+                            <Menu>
+                                <BlockTwo>
+                                    <BlockThree>
+                                   <motion.div whileTap={{scale:1.5, rotate:180}}><IconX sx={{ fontSize: 40 }} onClick={()=>{setShow(false)}}/></motion.div> 
+                                    </BlockThree>
+                                    <TextMenu style={{marginTop:0}}> 
+                                    <motion.div whileTap={{scale:1.2}}><Link to="/">Início</Link></motion.div>   
+                                    </TextMenu>
+                                    <TextMenu>
+                                    <motion.div whileTap={{scale:1.2}}><Link to="/Equipe">Equipe</Link></motion.div>  
+                                    </TextMenu>
+                                    <TextMenu>
+                                    <motion.div whileTap={{scale:1.2}}><Link to="/About">Sobre</Link></motion.div> 
+                                    </TextMenu>  
+                                </BlockTwo>
+                            </Menu> 
+                        </Blockx>  
+                    <BlockMenu
+                        as={motion.div} 
+                        animate={{x:!show?0:400}}
+                        initial={{x:0,}}
+                        transition={{
+                            duration:0.4
+                        }}
+                        exit={{opacity:0}}
+                    >
+                       <motion.div whileTap={{scale:1.2, rotate:60}}><IconMenu sx={{ fontSize: 40 }} onClick={()=>{setShow(true)}}/></motion.div> 
+                    </BlockMenu>
         </Container>
     )
 }

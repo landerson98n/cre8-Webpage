@@ -56,6 +56,7 @@ export const Hero = styled.div`
     }
    
 `
+
 export const Title = styled.div`
   max-width: 1200px;
   & h1{
@@ -444,10 +445,14 @@ export const ImageCourse = styled.img`
       max-height: 180px;
   }
   @media only screen and (max-width: 425px) {
+      width: 100%;
+      height:100%;
       max-width: 100px;
       max-height: 100px;
   }
   @media only screen and (max-width: 320px) {
+      width: 100%;
+      height:100%;
       max-width: 70px;
       max-height: 70px;
       margin-left: 5%;
@@ -699,7 +704,7 @@ export const  TitleClassTwo = styled.div`
 `
 export const Lista = styled.div`
   width: 100%;
-  margin-right: 20px;
+  margin-right: 2%;
   & li{ 
       font-family: 'Be Vietnam Pro';
       font-size: 3.6rem;

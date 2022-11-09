@@ -50,19 +50,24 @@ import globo from '../../assets/globo.webp'
 import exame from '../../assets/exame.webp'
 import teste from '../../assets/teste.webp'
 import landerson from '../../assets/Landerson.webp'
+import { motion } from "framer-motion";
 import { Button } from "../../Button"
 import { Header } from "../../Header"
 import { Foot } from "../../Foot"
+import {useMediaQuery} from 'react-responsive'
+
 export function Home(){
+    const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
     return (
     <Container> 
        <Header/>
-
-       <Hero>
+       <Hero
+       >
             <Block>
                 <BlockEi>
                     <Title>
-                        <h1>Aprenda falar  inglês com professores certificados internacionalmente!</h1>
+                        <motion.h1 
+                        >Aprenda falar  inglês com professores certificados internacionalmente!</motion.h1>
                     </Title>
                 </BlockEi>
                 <BlockEi>
@@ -86,10 +91,14 @@ export function Home(){
             </Block>
        </Hero>
 
-       <Depoiments>
+        {isMobile?
+        <Depoiments
+       >
             <Block>
                 <TitleClassTwo><h1>Depoimentos</h1></TitleClassTwo>
-                <Person>
+                <Person
+                    
+                >
                     <BlockFive>
                         <Block>
                             <TitleClass><h1>Landerson Miguel</h1></TitleClass>
@@ -107,59 +116,154 @@ export function Home(){
                 </Person>
             </Block>
         </Depoiments>
-
+        :
+        <Depoiments
+        as={motion.div}
+        initial={{opacity:0.5}}
+        whileHover={{scale:1.02, x:0,opacity:1}}
+        transition={{duration:0.4}}
+       >
+            <Block>
+                <TitleClassTwo><h1>Depoimentos</h1></TitleClassTwo>
+                <Person
+                    
+                >
+                    <BlockFive>
+                        <Block>
+                            <TitleClass><h1>Landerson Miguel</h1></TitleClass>
+                            <SubTitleTwo><h1>“Ótimos professores e excelentes aulas. Realizei meu sonho de falar inglês!”</h1></SubTitleTwo>
+                            <Stars>
+                            <IconStar/> 
+                            <IconStar/> 
+                            <IconStar/> 
+                            <IconStar/> 
+                            <IconStar/> 
+                            </Stars>
+                        </Block>
+                        <ImagePerson alt="Landerson Miguel" src={landerson}/>
+                    </BlockFive>
+                </Person>
+            </Block>
+        </Depoiments>
+        }
        <Content>    
         <BlockSeven>
             <Block>
-            <FirstContent>
-                <TextBlock>
-                    <TitleBlue>
-                        <h1>Aprenda inglês de forma flexível!</h1>
-                    </TitleBlue>
-                    <SubTitleBlue>
-                        <h1>A Cre8 possui cursos para todos os tipos de necessidades. Do iniciante ao avançado, até mesmo aulas exclusivas, com horários que melhor se adequem ao dia a dia do aluno. Confira nossos cursos!</h1>
-                    </SubTitleBlue>
-                </TextBlock>
-                <BlockImage>
-                    <Image src={estudando} alt="garota estudando inglês"/>
-                </BlockImage>     
-            </FirstContent>
 
-            <FirstContent>
-                <BlockImageTwo>
-                    <Image src={educacao} alt="certificados e diplomas internacionais"/>
-                </BlockImageTwo>
-
-                <TextBlock>
-                    <BlockSix>
+            {isMobile?
+                <FirstContent>
+                    <TextBlock>
                         <TitleBlue>
-                            <h1>Com professores certificados internacionalmente!</h1>
+                            <h1>Aprenda inglês de forma flexível!</h1>
                         </TitleBlue>
                         <SubTitleBlue>
-                            <h1>A Cre8 possui professores com mais de 5 anos de experiência, com certificação na University of Cambridge,  Arizona State University e Bridge Education Group. Quer saber mais? veja mais sobre nossa equipe.</h1>
+                            <h1>A Cre8 possui cursos para todos os tipos de necessidades. Do iniciante ao avançado, até mesmo aulas exclusivas, com horários que melhor se adequem ao dia a dia do aluno. Confira nossos cursos!</h1>
                         </SubTitleBlue>
-                    </BlockSix>
-                </TextBlock>
-               
-            </FirstContent>
+                    </TextBlock>
+                    <BlockImage>
+                        <Image src={estudando} alt="garota estudando inglês"/>
+                    </BlockImage>     
+                </FirstContent>
+            :
+                <FirstContent
+                    as={motion.div}
+                    initial={{x:-30,opacity:0.5}}
+                    whileHover={{scale:1.09, x:0,opacity:1}}
+                    transition={{duration:0.4}}
+                >
+                    <TextBlock>
+                        <TitleBlue>
+                            <h1>Aprenda inglês de forma flexível!</h1>
+                        </TitleBlue>
+                        <SubTitleBlue>
+                            <h1>A Cre8 possui cursos para todos os tipos de necessidades. Do iniciante ao avançado, até mesmo aulas exclusivas, com horários que melhor se adequem ao dia a dia do aluno. Confira nossos cursos!</h1>
+                        </SubTitleBlue>
+                    </TextBlock>
+                    <BlockImage>
+                        <Image src={estudando} alt="garota estudando inglês"/>
+                    </BlockImage>     
+                </FirstContent>
+            }
+           
+            {isMobile?
+                <FirstContent>
+                    <BlockImageTwo>
+                        <Image src={educacao} alt="certificados e diplomas internacionais"/>
+                    </BlockImageTwo>
 
-            <FirstContent>
-                <TextBlock>
-                    <TitleOt>
-                        <h1>Por que falar inglês?</h1>
-                    </TitleOt>
-                    <SubTitleBlue>
-                        <h1>Segundo uma pesquisa realizada pela Catho, profissionais que dominam o idioma possuem salário até 60% maior. Além disso, é a lingua internacional dos negócios</h1>
-                    </SubTitleBlue>
-                </TextBlock>
-                <BlockImage>
-                    <Image src={livro} alt="garoto falando inglês"/>
-                </BlockImage>
-            </FirstContent>
-            </Block>
+                    <TextBlock>
+                        <BlockSix>
+                            <TitleBlue>
+                                <h1>Com professores certificados internacionalmente!</h1>
+                            </TitleBlue>
+                            <SubTitleBlue>
+                                <h1>A Cre8 possui professores com mais de 5 anos de experiência, com certificação na University of Cambridge,  Arizona State University e Bridge Education Group. Quer saber mais? veja mais sobre nossa equipe.</h1>
+                            </SubTitleBlue>
+                        </BlockSix>
+                    </TextBlock>
+                
+                </FirstContent>
+            :
+                <FirstContent 
+                    as={motion.div}
+                    initial={{x:30,opacity:0.5}}
+                    whileHover={{scale:1.09, x:0,opacity:1}}
+                    transition={{duration:0.4}}
+                    >
+                    <BlockImageTwo>
+                        <Image src={educacao} alt="certificados e diplomas internacionais"/>
+                    </BlockImageTwo>
+
+                    <TextBlock>
+                        <BlockSix>
+                            <TitleBlue>
+                                <h1>Com professores certificados internacionalmente!</h1>
+                            </TitleBlue>
+                            <SubTitleBlue>
+                                <h1>A Cre8 possui professores com mais de 5 anos de experiência, com certificação na University of Cambridge,  Arizona State University e Bridge Education Group. Quer saber mais? veja mais sobre nossa equipe.</h1>
+                            </SubTitleBlue>
+                        </BlockSix>
+                    </TextBlock>
+                
+                </FirstContent>
+            }
             
+            {isMobile?
+                <FirstContent>
+                    <TextBlock>
+                        <TitleOt>
+                            <h1>Por que falar inglês?</h1>
+                        </TitleOt>
+                        <SubTitleBlue>
+                            <h1>Segundo uma pesquisa realizada pela Catho, profissionais que dominam o idioma possuem salário até 60% maior. Além disso, é a lingua internacional dos negócios</h1>
+                        </SubTitleBlue>
+                    </TextBlock>
+                    <BlockImage>
+                        <Image src={livro} alt="garoto falando inglês"/>
+                    </BlockImage>
+                </FirstContent>
+            :
+                <FirstContent
+                    as={motion.div}
+                    initial={{x:-30,opacity:0.5}}
+                    whileHover={{scale:1.09, x:0,opacity:1}}
+                    transition={{duration:0.4}}
+                >
+                    <TextBlock>
+                        <TitleOt>
+                            <h1>Por que falar inglês?</h1>
+                        </TitleOt>
+                        <SubTitleBlue>
+                            <h1>Segundo uma pesquisa realizada pela Catho, profissionais que dominam o idioma possuem salário até 60% maior. Além disso, é a lingua internacional dos negócios</h1>
+                        </SubTitleBlue>
+                    </TextBlock>
+                    <BlockImage>
+                        <Image src={livro} alt="garoto falando inglês"/>
+                    </BlockImage>
+                </FirstContent>
+            }
+            </Block>
         </BlockSeven>
-        
        </Content>
 
         <Schedule>

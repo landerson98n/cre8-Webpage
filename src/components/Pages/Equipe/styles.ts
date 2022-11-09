@@ -3,48 +3,38 @@ import styled, {css} from "styled-components"
 export const Container = styled.div`
     background-color: var(--background_blue);
     width: 100%;
-    height: 1100px;
+    height: 100%;
+    padding-bottom:5%;
+    padding-top:5%;
     padding-left: 10%;
     padding-right: 10%;
-    @media only screen and (max-width: 768px){
-      height: 900px;
-    }
+    display: flex;
+    align-items: center;
+
     @media only screen and (max-width: 425px){
-      height: 750px;
+      padding-bottom:0%;
+      padding-top:0%;
+      height: 470px;
     }
  `; 
 
 
 export const Equipes = styled.div`
-  background-color: #99CBFF;
   width: 100%;
-  height: 590px;
-  border-radius: 43px;
-  justify-content: center;
-  @media only screen and (max-width: 1196px) {
-    height: 460px;
-  }
-  @media only screen and (max-width: 907px) {
-    height: 300px;
-  }
-  @media only screen and (max-width: 425px) {
-    height: 180px;
-    border-radius: 14px;
-  }
-  @media only screen and (max-width: 320px) {
-    height: 140px;
-  }
+  margin-top: 5%;
 `
 
 export const ImagePerson = styled.img`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   object-fit: cover;
   height: 100%;
   width: 100%;
-  max-height: 350px;
-  max-width: 350px;
+  max-height: 280px;
+  max-width: 280px;
   border-radius: 100%;
-  margin-left: 90px;
-  margin-right: 60px;
+  margin-right: 8%;
   @media only screen and (max-width: 1196px) {
     object-fit: cover;
     height: 100%;
@@ -65,11 +55,9 @@ export const ImagePerson = styled.img`
       width: 100%;
       max-height: 100px;
       max-width: 100px;
-      margin-left: 5%;
-      margin-right: 5%;
   }
-  @media only screen and (max-width: 425px) {
-    max-height: 90px;
+  @media only screen and (max-width: 320px) {
+      max-height: 90px;
       max-width: 90px;
   }
 `
@@ -78,13 +66,13 @@ export const SubTitleTwo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 3.5%;
   & h1{
       font-family: 'Be Vietnam Pro';
       font-size: 3rem;
       font-weight: 400;
       color: white;
-      text-align: center;
-      margin-bottom: 35px;
+      text-align: left;
     }
    @media only screen and (max-width: 1196px) {
       h1{
@@ -103,40 +91,130 @@ export const SubTitleTwo = styled.div`
     }
     @media only screen and (max-width: 425px) {
       h1{
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
     }
 `
 
 export const Lista = styled.div`
   width: 100%;
-  margin-right: 20px;
+  padding-left: 12%;
+  padding-right: 6%;
   & li{ 
       font-family: 'Be Vietnam Pro';
-      font-size: 3.6rem;
+      font-size: 2rem;
       font-weight: 400;
       color: white;
   }
   @media only screen and (max-width: 1196px) {
       li{
-          font-size: 2.6rem;
+          font-size: 1.6rem;
       }
   }
   @media only screen and (max-width: 947px) {
       li{
-          font-size: 2.2rem;
+          font-size: 1.2rem;
       }
   }
+`
+
+export const Person = styled.div`
+  width: 100%;  
+  height: 100%;
+  display: block;
+  justify-content: center;
+  max-width: 1300px;
+  display: block;
+  justify-items: center;
+  background-color: #71A7ED;
+  height: 580px;
+  border-radius: 27px;
+  align-items: center;
+  margin-top: 5%;
   @media only screen and (max-width: 1196px) {
-    li{
-          font-size: 1.8rem;
-      }
+    height: 500px;
+  }
+  @media only screen and (max-width: 907px) {
+    height: 400px;
   }
   @media only screen and (max-width: 425px) {
-      li{
-        font-size: 1.2rem;
-        }
+      height: 306px;
+      border-radius: 8px;
   }
+`
+
+
+export const BlockFive = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 6%;
+  padding-left: 10%;
+  padding-right: 11%;
+  padding-top: 5%;
+`
+export const Curses = styled.div`
+  display: flex;
+  justify-items: center;
+  background-color: white;
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  @media only screen and (max-width: 425px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    height: 800px;
+  }
+  @media only screen and (max-width: 375px) {
+    padding-left: 3rem;
+    padding-right: 2.5rem;
+  }
+  @media only screen and (max-width: 320px) {
+    height: 760px;
+  }
+`
+export const  TitleClass = styled.div`
+    width: 100%;
+    margin-top: 5%;
+   & h1{
+      font-family: 'Baloo 2';
+      font-size: 5rem;
+      font-weight: 700;
+      color: white;
+      text-align: left;
+    }
+    @media only screen and (max-width: 1196px) {
+      h1{
+          font-size: 3.6rem;
+      }
+  }
+    @media only screen and (max-width: 947px) {
+        h1{
+            font-size: 2.9rem;
+        }
+   }
+   @media only screen and (max-width: 907px) {
+        h1{
+            font-size: 2.2rem;
+        }
+    }
+    @media only screen and (max-width: 425px) {
+      h1{
+            font-size: 1.7rem;
+        }
+    }
+    @media only screen and (max-width: 320px) {
+          h1{
+                font-size: 1.4rem;
+            }
+      }
+`
+
+
+export const Block = styled.div`
+    width: 100%;
 `
 
 export const SubTitleOne = styled.div`
