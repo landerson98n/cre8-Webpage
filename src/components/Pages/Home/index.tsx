@@ -33,14 +33,14 @@ import {
     ImagePerson,
     BlockFive,
     TitleClassTwo,
-    Mission,
     BlockSix,
-    SubTitleBlueTwo,
     BlockSeven,
     BlockEi,
     SubTitleTwo,
     BlockImage,
-    BlockImageTwo
+    BlockImageTwo,
+    Persons,
+    BlockX
 } from "./styles"
 
 import estudando from '../../assets/estudando.webp'
@@ -55,14 +55,24 @@ import { Button } from "../../Button"
 import { Header } from "../../Header"
 import { Foot } from "../../Foot"
 import {useMediaQuery} from 'react-responsive'
+import {useRef, useEffect, useState} from 'react'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export function Home(){
     const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
+    const [width, setWidth] = useState(0)
+    const slide_wrapper : any = useRef()
+
+    useEffect(()=>{
+        slide_wrapper.current?
+        setWidth(slide_wrapper.current.scrollWidth - slide_wrapper.current.offsetWidth):undefined
+    },[])
+
     return (
     <Container> 
        <Header/>
-       <Hero
-       >
+      
+       <Hero>
             <Block>
                 <BlockEi>
                     <Title>
@@ -96,9 +106,7 @@ export function Home(){
        >
             <Block>
                 <TitleClassTwo><h1>Depoimentos</h1></TitleClassTwo>
-                <Person
-                    
-                >
+                <Person>
                     <BlockFive>
                         <Block>
                             <TitleClass><h1>Landerson Miguel</h1></TitleClass>
@@ -118,34 +126,64 @@ export function Home(){
         </Depoiments>
         :
         <Depoiments
-        as={motion.div}
-        initial={{opacity:0.5}}
-        whileHover={{scale:1.02, x:0,opacity:1}}
-        transition={{duration:0.4}}
-       >
+            as={motion.div}
+            initial={{opacity:0.5}}
+            whileHover={{scale:1.02, x:0,opacity:1}}
+            transition={{duration:0.4}}
+        >
             <Block>
                 <TitleClassTwo><h1>Depoimentos</h1></TitleClassTwo>
-                <Person
-                    
+                <Persons
+                    as={motion.div} 
+                    ref={slide_wrapper}
                 >
-                    <BlockFive>
-                        <Block>
-                            <TitleClass><h1>Landerson Miguel</h1></TitleClass>
-                            <SubTitleTwo><h1>“Ótimos professores e excelentes aulas. Realizei meu sonho de falar inglês!”</h1></SubTitleTwo>
-                            <Stars>
-                            <IconStar/> 
-                            <IconStar/> 
-                            <IconStar/> 
-                            <IconStar/> 
-                            <IconStar/> 
-                            </Stars>
-                        </Block>
-                        <ImagePerson alt="Landerson Miguel" src={landerson}/>
-                    </BlockFive>
-                </Person>
+                    <BlockX
+                        as={motion.div} 
+                        drag='x'
+                        dragConstraints={{
+                            left: -width,
+                            right:0
+                        }}
+                    >
+                        <Person>
+                            <BlockFive>
+                                <Block>
+                                    <TitleClass><h1>Landerson Miguel</h1></TitleClass>
+                                    <SubTitleTwo><h1>“Ótimos professores e excelentes aulas. Realizei meu sonho de falar inglês!”</h1></SubTitleTwo>
+                                    <Stars>
+                                    <IconStar/> 
+                                    <IconStar/> 
+                                    <IconStar/> 
+                                    <IconStar/> 
+                                    <IconStar/> 
+                                    </Stars>
+                                </Block>
+                                <ImagePerson alt="Landerson Miguel" src={landerson}/>
+                            </BlockFive>
+                                </Person> 
+                                <Person>
+                                        <BlockFive>
+                                            <Block>
+                                                <TitleClass><h1>Landerson Miguel</h1></TitleClass>
+                                                <SubTitleTwo><h1>“Ótimos professores e excelentes aulas. Realizei meu sonho de falar inglês!”</h1></SubTitleTwo>
+                                                <Stars>
+                                                <IconStar/> 
+                                                <IconStar/> 
+                                                <IconStar/> 
+                                                <IconStar/> 
+                                                <IconStar/> 
+                                                </Stars>
+                                            </Block>
+                                            <ImagePerson alt="Landerson Miguel" src={landerson}/>
+                                        </BlockFive>
+                                </Person> 
+                    </BlockX>
+                        
+                    </Persons>
             </Block>
         </Depoiments>
         }
+
        <Content>    
         <BlockSeven>
             <Block>

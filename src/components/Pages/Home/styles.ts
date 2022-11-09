@@ -5,6 +5,7 @@ import star from '@mui/icons-material/Star'
 
 export const Container = styled.div`
   flex:1;
+  overflow: hidden;
  `; 
 const iconCSS = css`
   width: 9.2rem;
@@ -476,6 +477,18 @@ export const FirstContent = styled.div`
   }
 `
 
+export const BlockX = styled.div`
+  width: 100%;
+  display: flex;
+`
+export const Persons = styled.div`
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  cursor: grab;
+`
+
+
 export const  Schedule = styled.div`
   display: flex;
   margin-top: 100px;
@@ -504,6 +517,7 @@ export const  Schedule = styled.div`
 `
 export const Block = styled.div`
     width: 100%;
+    
 `
 export const BlockTwo = styled.div`
   display: flex;
@@ -539,6 +553,7 @@ export const BlockFive = styled.div`
   margin-top: 40px;
   margin-left: 60px;
   margin-bottom: 60px;
+  
   @media only screen and (max-width: 425px) {
     margin-top: 1px;
     margin-left: 1px;
@@ -808,16 +823,18 @@ export const Depoiments = styled.div`
   
 `
 export const Person = styled.div`
-  width: 100%;  
+  width: 50%;  
   height: 100%;
   display: flex;
   justify-content: center;
   max-width: 1300px;
+  min-width: 90%;
   display: flex;
   justify-items: center;
   background-color: #71A7ED;
   height: 534px;
   border-radius: 27px;
+  margin-right: 4%;
   @media only screen and (max-width: 1196px) {
     height: 400px;
   }
@@ -836,7 +853,7 @@ export const ImagePerson = styled.img`
   max-height: 350px;
   max-width: 350px;
   border-radius: 100%;
-  margin-left: 90px;
+  margin-left: 7%;
   margin-right: 60px;
   @media only screen and (max-width: 1196px) {
     object-fit: cover;
