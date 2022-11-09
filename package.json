@@ -33,7 +33,6 @@
     "react-google-font-loader": "^1.1.0",
     "react-native-responsive-fontsize": "^0.5.1",
     "react-responsive": "^9.0.0",
-    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.3",
     "styled-components": "^5.3.6",
     "vite-plugin-fonts": "^0.6.0"

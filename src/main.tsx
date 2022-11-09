@@ -5,7 +5,6 @@ import Routes from './routes'
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
 } from "react-router-dom";
 import { Home } from './components/Pages/Home';
 import { About } from './components/Pages/About';

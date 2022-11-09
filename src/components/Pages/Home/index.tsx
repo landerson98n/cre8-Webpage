@@ -56,10 +56,9 @@ import { Header } from "../../Header"
 import { Foot } from "../../Foot"
 import {useMediaQuery} from 'react-responsive'
 import {useRef, useEffect, useState} from 'react'
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export function Home(){
-    const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
+    const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
     const [width, setWidth] = useState(0)
     const slide_wrapper : any = useRef()
 
@@ -101,34 +100,11 @@ export function Home(){
             </Block>
        </Hero>
 
-        {isMobile?
-        <Depoiments
-       >
-            <Block>
-                <TitleClassTwo><h1>Depoimentos</h1></TitleClassTwo>
-                <Person>
-                    <BlockFive>
-                        <Block>
-                            <TitleClass><h1>Landerson Miguel</h1></TitleClass>
-                            <SubTitleTwo><h1>“Ótimos professores e excelentes aulas. Realizei meu sonho de falar inglês!”</h1></SubTitleTwo>
-                            <Stars>
-                            <IconStar/> 
-                            <IconStar/> 
-                            <IconStar/> 
-                            <IconStar/> 
-                            <IconStar/> 
-                            </Stars>
-                        </Block>
-                        <ImagePerson alt="Landerson Miguel" src={landerson}/>
-                    </BlockFive>
-                </Person>
-            </Block>
-        </Depoiments>
-        :
+ 
         <Depoiments
             as={motion.div}
-            initial={{opacity:0.5}}
-            whileHover={{scale:1.02, x:0,opacity:1}}
+            initial={{opacity:isMobile?1:0.5}}
+            whileHover={{scale:1.02,opacity:1}}
             transition={{duration:0.4}}
         >
             <Block>
@@ -181,8 +157,9 @@ export function Home(){
                         
                     </Persons>
             </Block>
+            
         </Depoiments>
-        }
+        
 
        <Content>    
         <BlockSeven>
@@ -205,7 +182,7 @@ export function Home(){
             :
                 <FirstContent
                     as={motion.div}
-                    initial={{x:-30,opacity:0.5}}
+                    initial={{opacity:0.5}}
                     whileHover={{scale:1.09, x:0,opacity:1}}
                     transition={{duration:0.4}}
                 >
@@ -244,7 +221,7 @@ export function Home(){
             :
                 <FirstContent 
                     as={motion.div}
-                    initial={{x:30,opacity:0.5}}
+                    initial={{opacity:0.5}}
                     whileHover={{scale:1.09, x:0,opacity:1}}
                     transition={{duration:0.4}}
                     >
@@ -283,8 +260,8 @@ export function Home(){
             :
                 <FirstContent
                     as={motion.div}
-                    initial={{x:-30,opacity:0.5}}
-                    whileHover={{scale:1.09, x:0,opacity:1}}
+                    initial={{opacity:0.5}}
+                    whileHover={{scale:1.09,opacity:1}}
                     transition={{duration:0.4}}
                 >
                     <TextBlock>
@@ -300,6 +277,7 @@ export function Home(){
                     </BlockImage>
                 </FirstContent>
             }
+
             </Block>
         </BlockSeven>
        </Content>

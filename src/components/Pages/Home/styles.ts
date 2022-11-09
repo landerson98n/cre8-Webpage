@@ -383,7 +383,6 @@ export const Content = styled.div`
   background-color: white;
   padding-left: 10%;
   padding-right: 10%;
-  justify-content: space-between;
   @media only screen and (max-width: 1196px) {
     margin-top: 5rem;
   }
@@ -510,14 +509,13 @@ export const  Schedule = styled.div`
     padding-right: 5rem;
     height: 203px;
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 375px) {
     padding-left: 3rem;
     padding-right: 3rem;
   }
 `
 export const Block = styled.div`
     width: 100%;
-    
 `
 export const BlockTwo = styled.div`
   display: flex;
@@ -682,7 +680,6 @@ export const Foot = styled.div`
 `
 export const BlockSix = styled.div`
   width: 100%;
-  padding-left: 4%;
 `
 export const  TitleClassTwo = styled.div`
     width: 100%;
@@ -816,7 +813,7 @@ export const Depoiments = styled.div`
     height: 180px;
     margin-top: 10%;
   }
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 375px) {
     padding-left: 3rem;
     padding-right: 3rem;
   }
