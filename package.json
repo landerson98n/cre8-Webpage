@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && react-compress -d /dist",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "serve": "yarn build && vite preview"
+
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",

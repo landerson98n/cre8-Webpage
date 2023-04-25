@@ -17,7 +17,7 @@ export const Container = styled.button`
       height: 39px;
       border-radius: 8px;
     }
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 355px) {
       width: 260px;
       height: 39px;
     }

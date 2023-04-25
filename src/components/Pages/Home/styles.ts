@@ -310,6 +310,11 @@ export const SubTitleTwo = styled.div`
             font-size: 1.2rem;
         }
     }
+    @media only screen and (max-width: 350px) {
+      h1{
+            font-size: 1.1rem;
+        }
+    }
 `
 
 export const SubTitleBlue = styled.div`
@@ -634,11 +639,19 @@ export const  TitleClass = styled.div`
             font-size: 2rem;
         }
     }
-    @media only screen and (max-width: 320px) {
-          h1{
-                font-size: 1.5rem;
-            }
-      }
+    @media only screen and (max-width: 370px) {
+      h1{
+            font-size: 1.8rem;
+        }
+    }
+
+    @media only screen and (max-width: 350px) {
+      h1{
+            font-size: 1.4rem;
+        }
+    }
+
+   
 `
 export const SubTitleBlueTwo = styled.div`
   width: 100%;
@@ -743,6 +756,12 @@ export const Lista = styled.div`
         font-size: 1.2rem;
         }
   }
+
+  @media only screen and (max-width: 355px) {
+      li{
+        font-size: 1rem;
+        }
+  }
 `
 export const ClassTwo = styled.div`
   background-color: #E15C54;
@@ -820,12 +839,12 @@ export const Depoiments = styled.div`
   
 `
 export const Person = styled.div`
-  width: 50%;  
+  width: 100%;  
   height: 100%;
   display: flex;
   justify-content: center;
   max-width: 1300px;
-  min-width: 90%;
+  min-width: 93%;
   display: flex;
   justify-items: center;
   background-color: #71A7ED;
