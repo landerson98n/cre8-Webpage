@@ -95,16 +95,15 @@ export function Home(){
                     
                 </BlockEi>
                 <BlockEi>
-                    <SubTitle>  
+                    <SubTitle>                   
                         <h1>Aprenda inglês com professores certificados internacionalmente. Conquiste sua fluencia e domine o mundo dos negócios.</h1>
+                        <iframe  src="https://embed.lottiefiles.com/animation/79960"></iframe>    
                     </SubTitle>
                 </BlockEi>
                 <ButtonAlign>
                     <Button title="Começe a aprender!"/> 
-                    
                 </ButtonAlign>
                 <Testimonial>
-
                     <h1>Somos aprovados por todos os nossos alunos</h1>
                 </Testimonial>
                 <Stars>
@@ -193,7 +192,7 @@ export function Home(){
                         </SubTitleBlue>
                     </TextBlock>
                     <BlockImage>
-                    <iframe style ={{width:"100%", height:'200px'}} src="https://embed.lottiefiles.com/animation/90724"></iframe>
+                    <iframe style ={{width:"100%", height:'300px'}} src="https://embed.lottiefiles.com/animation/90724"></iframe>
                     </BlockImage>     
                 </FirstContent>
             :
@@ -241,7 +240,7 @@ export function Home(){
                     transition={{duration:0.4}}
                     >
                     <BlockImageTwo>
-                    <iframe style ={{width:"100%", height:'400px'}} src="https://embed.lottiefiles.com/animation/85352"></iframe>
+                    <iframe style ={{width:"100%", height:'500px'}} src="https://embed.lottiefiles.com/animation/85352"></iframe>
                     </BlockImageTwo>
 
                     <TextBlock>
@@ -269,7 +268,7 @@ export function Home(){
                         </SubTitleBlue>
                     </TextBlock>
                     <BlockImage>
-                        <iframe style ={{width:"100%", height:'250px'}} src="https://embed.lottiefiles.com/animation/129404"></iframe>
+                        <iframe style ={{width:"100%", height:'300px'}} src="https://embed.lottiefiles.com/animation/129404"></iframe>
                     </BlockImage>
                 </FirstContent>
             :
@@ -288,7 +287,7 @@ export function Home(){
                         </SubTitleBlue>
                     </TextBlock>
                     <BlockImage>
-                    <iframe style ={{width:"100%", height:'400px'}} src="https://embed.lottiefiles.com/animation/129404"></iframe>
+                    <iframe style ={{width:"100%", height:'500px'}} src="https://embed.lottiefiles.com/animation/129404"></iframe>
                     </BlockImage>
                 </FirstContent>
             }
@@ -376,7 +375,7 @@ export function Home(){
             </div>
         </div>
         : 
-        <>
+        <div>
             <TitleBlue>
                 <h1>Entre em contato com a gente</h1>
             </TitleBlue>
@@ -385,14 +384,14 @@ export function Home(){
                 <InputText placeholder='email@example.com' onChange={(event)=>setEmail(event.target.value)} type="email" required pattern=".+@globex\.com"></InputText>
                 <TelInput value={phone}
                         mask="(99) 9999-99999"
-                        placeholder="Digite o seu telefone"
+                        placeholder="Telefone"
                         onChange={(event)=>setPhone(event.target.value)}>
                 </TelInput>
             </div>
-            <div style={{width:'100%', marginTop:'3%', marginBottom:'3%'}} >
+            <div style={{width:'100%', marginTop:'3%', marginBottom:'10%'}} >
                 <Button onClick={()=>{sendEmail; setEnviar(true)}}  title="Enviar"/> 
             </div>
-        </> 
+        </div> 
         }
     </Contact>
         <Foot/>

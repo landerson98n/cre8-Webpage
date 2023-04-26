@@ -21,39 +21,48 @@ export const TelInput = styled(IMaskInput)`
   width: 80%;
   padding-left: 3%;
   margin-top: 3%;
-  border: solid 4px;
+  border: solid 2px;
   border-radius: 30px;
-  height: 60px;
+  height: 12%;
   border-color: var(--background_blue) ;
   color: var(--background_blue);
-  font-size: 30px;
+  font-size: 250%;
   :focus{
     text-decoration: none;
     outline: 0;
   }
   ::-webkit-input-placeholder {
-    font-size: 20px;
+    font-size: 65%;
     color: var(--schedule);
   }
+
+  @media only screen and (max-width: 425px) {
+    width: 100%;
+  }
+
 
 `
 export const InputText = styled.input`
   width: 80%;
   padding-left: 3%;
   margin-top: 3%;
-  border: solid 4px;
+  border: solid 2px;
   border-radius: 30px;
-  height: 60px;
+  height: 12%;
   border-color: var(--background_blue) ;
   color: var(--background_blue);
-  font-size: 30px;
+  font-size: 250%;
   :focus{
     text-decoration: none;
     outline: 0;
   }
   ::-webkit-input-placeholder {
-    font-size: 20px;
+    font-size: 65%;
     color: var(--schedule);
+  }
+
+  @media only screen and (max-width: 425px) {
+    width: 100%;
   }
 `; 
 const iconCSS = css`
@@ -98,7 +107,7 @@ export const Hero = styled.div`
       padding-left: 5rem;
       padding-right: 5rem;
       padding-top: 0rem;
-      height: 370px;
+      height: 470px;
     }
     @media only screen and (max-width: 320px) {
       padding-left: 3rem;
@@ -286,21 +295,37 @@ export const SubTitle = styled.div`
       text-align: center;
       margin-bottom: 35px;
    } 
+   iframe{
+    width:30%;
+    position:absolute; 
+    margin-left:70%; 
+    margin-top:10%; 
+    height:40%;
+   }
    @media only screen and (max-width: 1196px) {
       width: 60%;
       h2{
           font-size: 2.6rem;
+      }
+      iframe{
+        margin-top:20%; 
       }
     }
     @media only screen and (max-width: 947px) {
        width: 50%;
     }
 
+
     @media only screen and (max-width: 907px) {
        width: 50%;
        h1{
         font-size:1.5rem;
        }
+    }
+    @media only screen and (max-width: 768px) {
+      iframe{
+        display: none;
+      }
     }
     @media only screen and (max-width: 425px) {
       width: 80%;
@@ -311,7 +336,30 @@ export const SubTitle = styled.div`
         color: white;
         text-align: left;
       }
+      iframe{
+        display: flex;
+        width:100%;
+        margin-left:10%; 
+        margin-top:55%; 
+        height:35%;
+      }
     }
+
+    @media only screen and (max-width: 375px) {
+      iframe{
+        margin-top:65%; 
+        height:35%;
+      }
+    }
+
+    @media only screen and (max-width: 320px) {
+      iframe{
+        margin-left:10%; 
+        margin-top:65%; 
+        height:30%;
+      }
+    }
+    
 
 `
 
@@ -401,6 +449,9 @@ export const ButtonAlign = styled.div`
   padding-top: 30px;
   padding-bottom: 30px;
   justify-content: center;
+  @media only screen and (max-width: 425px) {
+    margin-top: 50% ;
+  }
 `
 export const Testimonial = styled.div`
   & h1{
@@ -410,9 +461,14 @@ export const Testimonial = styled.div`
       color: white;
       text-align: center;
     }
-    @media only screen and (max-width: 907px) {
+    @media only screen and (max-width: 1024px) {
        h1{
         font-size:1.8rem;
+       }
+    }
+    @media only screen and (max-width: 768px) {
+       h1{
+        font-size:1.4rem;
        }
     }
     @media only screen and (max-width: 425px) {
@@ -625,6 +681,7 @@ export const Curses = styled.div`
   margin-top: 5%;
   margin-bottom: 5%;
   @media only screen and (max-width: 425px) {
+    margin-bottom: -15%;
     padding-left: 5rem;
     padding-right: 5rem;
     height: 800px;
@@ -634,6 +691,7 @@ export const Curses = styled.div`
     padding-right: 2.5rem;
   }
   @media only screen and (max-width: 320px) {
+    margin-bottom: -35%;
     height: 760px;
   }
 `
@@ -653,6 +711,10 @@ export const  ClassOne = styled.div`
   }
   @media only screen and (max-width: 425px) {
     height: 180px;
+    border-radius: 14px;
+  }
+  @media only screen and (max-width: 320px) {
+    height: 150px;
     border-radius: 14px;
   }
 `

@@ -14,14 +14,11 @@ export const Container = styled.button`
       height: 86px;
     }
     @media only screen and (max-width: 425px) {
-      width: 320px;
+      width: 100%;
       height: 39px;
       border-radius: 8px;
     }
-    @media only screen and (max-width: 355px) {
-      width: 260px;
-      height: 39px;
-    }
+
  `; 
 
 export const Text = styled.div`
