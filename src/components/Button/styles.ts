@@ -8,6 +8,7 @@ export const Container = styled.button`
     align-items: center;
     justify-content: center;
     border-radius: 11px;
+    cursor: pointer;
     @media only screen and (max-width: 1024px) {
       width: 286px;
       height: 86px;

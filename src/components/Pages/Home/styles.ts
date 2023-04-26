@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components"
 import { RFValue } from 'react-native-responsive-fontsize';
+import  IMaskInput  from "react-input-mask";
 
 import star from '@mui/icons-material/Star'
 
@@ -7,6 +8,54 @@ export const Container = styled.div`
   flex:1;
   overflow: hidden;
  `; 
+
+export const Contact = styled.div`
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 5%;
+`;
+
+
+export const TelInput = styled(IMaskInput)`
+  width: 80%;
+  padding-left: 3%;
+  margin-top: 3%;
+  border: solid 4px;
+  border-radius: 30px;
+  height: 60px;
+  border-color: var(--background_blue) ;
+  color: var(--background_blue);
+  font-size: 30px;
+  :focus{
+    text-decoration: none;
+    outline: 0;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 20px;
+    color: var(--schedule);
+  }
+
+`
+export const InputText = styled.input`
+  width: 80%;
+  padding-left: 3%;
+  margin-top: 3%;
+  border: solid 4px;
+  border-radius: 30px;
+  height: 60px;
+  border-color: var(--background_blue) ;
+  color: var(--background_blue);
+  font-size: 30px;
+  :focus{
+    text-decoration: none;
+    outline: 0;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 20px;
+    color: var(--schedule);
+  }
+`; 
 const iconCSS = css`
   width: 9.2rem;
   height: 9.2rem;

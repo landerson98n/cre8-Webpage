@@ -1,5 +1,8 @@
 import React from 'react'
 import {
+    TelInput,
+    Contact,
+    InputText,
     Container,  
     Hero,
     Title,
@@ -56,8 +59,13 @@ import { Header } from "../../Header"
 import { Foot } from "../../Foot"
 import {useMediaQuery} from 'react-responsive'
 import {useRef, useEffect, useState} from 'react'
+import emailjs from '@emailjs/browser';
 
 export function Home(){
+    const [phone, setPhone] = useState('')
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [enviar, setEnviar] = useState(false)
     const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
     const [width, setWidth] = useState(0)
     const slide_wrapper : any = useRef()
@@ -67,6 +75,12 @@ export function Home(){
         setWidth(slide_wrapper.current.scrollWidth - slide_wrapper.current.offsetWidth):undefined
     },[])
 
+    function sendEmail(){
+        const params = {
+            message: `Nome: ${name}, Telefone: ${phone}, Email: ${email} `
+        }
+        emailjs.send('service_xkzbnlg', 'template_rf5wgp9', params, '50tNXyTFF0JinzHnv')
+    }
     return (
     <Container> 
        <Header/>
@@ -78,6 +92,7 @@ export function Home(){
                         <motion.h1 
                         >Aprenda falar  inglês com professores certificados internacionalmente!</motion.h1>
                     </Title>
+                    
                 </BlockEi>
                 <BlockEi>
                     <SubTitle>  
@@ -86,8 +101,10 @@ export function Home(){
                 </BlockEi>
                 <ButtonAlign>
                     <Button title="Começe a aprender!"/> 
+                    
                 </ButtonAlign>
                 <Testimonial>
+
                     <h1>Somos aprovados por todos os nossos alunos</h1>
                 </Testimonial>
                 <Stars>
@@ -176,7 +193,7 @@ export function Home(){
                         </SubTitleBlue>
                     </TextBlock>
                     <BlockImage>
-                        <Image src={estudando} alt="garota estudando inglês"/>
+                    <iframe style ={{width:"100%", height:'200px'}} src="https://embed.lottiefiles.com/animation/90724"></iframe>
                     </BlockImage>     
                 </FirstContent>
             :
@@ -195,7 +212,7 @@ export function Home(){
                         </SubTitleBlue>
                     </TextBlock>
                     <BlockImage>
-                        <Image src={estudando} alt="garota estudando inglês"/>
+                    <iframe style ={{width:"100%", height:'500px'}} src="https://embed.lottiefiles.com/animation/90724"></iframe>
                     </BlockImage>     
                 </FirstContent>
             }
@@ -203,9 +220,7 @@ export function Home(){
             {isMobile?
                 <FirstContent>
                     <BlockImageTwo>
-                        <Image src={educacao} alt="certificados e diplomas internacionais"/>
-                    </BlockImageTwo>
-
+                    <iframe style ={{width:"100%", height:'300px'}} src="https://embed.lottiefiles.com/animation/85352"></iframe>                    </BlockImageTwo>
                     <TextBlock>
                         <BlockSix>
                             <TitleBlue>
@@ -226,7 +241,7 @@ export function Home(){
                     transition={{duration:0.4}}
                     >
                     <BlockImageTwo>
-                        <Image src={educacao} alt="certificados e diplomas internacionais"/>
+                    <iframe style ={{width:"100%", height:'400px'}} src="https://embed.lottiefiles.com/animation/85352"></iframe>
                     </BlockImageTwo>
 
                     <TextBlock>
@@ -254,7 +269,7 @@ export function Home(){
                         </SubTitleBlue>
                     </TextBlock>
                     <BlockImage>
-                        <Image src={livro} alt="garoto falando inglês"/>
+                        <iframe style ={{width:"100%", height:'250px'}} src="https://embed.lottiefiles.com/animation/129404"></iframe>
                     </BlockImage>
                 </FirstContent>
             :
@@ -273,7 +288,7 @@ export function Home(){
                         </SubTitleBlue>
                     </TextBlock>
                     <BlockImage>
-                        <Image src={livro} alt="garoto falando inglês"/>
+                    <iframe style ={{width:"100%", height:'400px'}} src="https://embed.lottiefiles.com/animation/129404"></iframe>
                     </BlockImage>
                 </FirstContent>
             }
@@ -342,12 +357,44 @@ export function Home(){
                     </ClassThree>
                     
                 </BlockThree>
-                <BlockFour>
-                    <Button title="Saiba mais"/>
-                </BlockFour>
+                
             </Block>
         </Curses>
-
+    <Contact>
+        {enviar ? 
+        <div style={{width:'100%', marginTop:'10%', marginBottom:'10%'}}>
+            <TitleBlue
+            as={motion.div}
+            initial={{opacity:0.2, x: -100}}
+            animate={{x: 10, opacity: 1}}
+            transition={{duration:0.6}}
+            >
+                <h1>Muito Obrigado! Entraremos em contato em breve</h1>
+            </TitleBlue>
+            <div style={{width:'100%',marginTop:'1%', display:'flex', justifyContent:'center'}}>
+                <iframe src="https://embed.lottiefiles.com/animation/74623"></iframe>
+            </div>
+        </div>
+        : 
+        <>
+            <TitleBlue>
+                <h1>Entre em contato com a gente</h1>
+            </TitleBlue>
+            <div style={{width:'100%'}}>
+                <InputText placeholder='Seu nome' onChange={(event)=>setName(event.target.value)}></InputText>
+                <InputText placeholder='email@example.com' onChange={(event)=>setEmail(event.target.value)} type="email" required pattern=".+@globex\.com"></InputText>
+                <TelInput value={phone}
+                        mask="(99) 9999-99999"
+                        placeholder="Digite o seu telefone"
+                        onChange={(event)=>setPhone(event.target.value)}>
+                </TelInput>
+            </div>
+            <div style={{width:'100%', marginTop:'3%', marginBottom:'3%'}} >
+                <Button onClick={()=>{sendEmail; setEnviar(true)}}  title="Enviar"/> 
+            </div>
+        </> 
+        }
+    </Contact>
         <Foot/>
 
     </Container>

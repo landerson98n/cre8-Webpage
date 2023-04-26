@@ -3,15 +3,17 @@ import {Container, Text} from './styles'
 import { motion } from "framer-motion";
 
 interface Props{
-    title : String
+    title : String,
+    onClick: () => void
 }
 
-export function Button({title, ...rest}:Props){
+export function Button({title, onClick }:Props){
     return(
         <Container
             as={motion.button}
-            whileHover={{scale:1.1}}
-            whileTap={{scale:1.12}}
+            whileHover={{scale:1.03}}
+            whileTap={{scale:1.04}}
+            onClick={onClick}
         >
             <Text><h1>{title}</h1></Text>
         </Container>
