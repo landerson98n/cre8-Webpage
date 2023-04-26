@@ -10,12 +10,6 @@ export const Container = styled.div`
     padding-right: 10%;
     display: flex;
     align-items: center;
-
-    @media only screen and (max-width: 425px){
-      padding-bottom:0%;
-      padding-top:0%;
-      height: 470px;
-    }
  `; 
 
 

@@ -95,7 +95,6 @@ export function Home(){
     return (
     <Container> 
        <Header/>
-      
        <Hero>
             <Block>
                 <BlockEi>
@@ -395,12 +394,10 @@ export function Home(){
                     <h1>Entre em contato com a gente</h1>
                 </TitleBlue>
                 <div style={{width:'100%'}}>
-                    <div>
-                        <InputText {...register('nome')} placeholder='Seu nome' onChange={(event)=>setName(event.target.value)}></InputText>
-                        <br/>
-                        <br/>
-                        {errors.nome && <span>{errors.nome.message}</span>}
-                    </div>
+                    <InputText {...register('nome')} placeholder='Seu nome' onChange={(event)=>setName(event.target.value)}></InputText>
+                     
+                    {errors.nome && <><br/><br/> <span>{errors.nome.message}</span></>}
+                   
                     <InputText {...register('email')} placeholder='email@example.com' onChange={(event)=>setEmail(event.target.value)} type="email" required  ></InputText>
                     <TelInput {...register('telefone')} value={phone}
                             mask="(99) 9999-99999"

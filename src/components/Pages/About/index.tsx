@@ -14,7 +14,7 @@ import { Foot } from '../../Foot'
 
 export function About(){
     return(
-        <>
+        <div style={{overflow: 'hidden'}}>
          <Header/>
             <Container>
                 <Block>
@@ -33,7 +33,7 @@ export function About(){
                 </BlockTwo>
             </Container>
             <Foot/>
-        </>
+        </div>
        
     )
 }

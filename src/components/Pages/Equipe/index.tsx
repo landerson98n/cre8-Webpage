@@ -24,7 +24,7 @@ import {
 
 export function Equipe(){
     return(
-        <>
+        <div style={{overflow: 'hidden'}}>
          <Header/>
             <Container>
                 <Block>
@@ -134,13 +134,12 @@ Graduada em Comunicação Social (Universidade Federal do Piauí)</li>
                                     <li>Design Gráfico(FIAP On)</li>
                                 </ul>
                             </Lista>
-                        </Person>
-                        
+                        </Person> 
                     </Equipes>
                 </Block>
             </Container>
             <Foot/>
-        </>
+        </div>
        
     )
 }
