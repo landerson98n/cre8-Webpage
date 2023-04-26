@@ -308,7 +308,7 @@ export const SubTitle = styled.div`
           font-size: 2.6rem;
       }
       iframe{
-        margin-top:20%; 
+        margin-top:30%; 
       }
     }
     @media only screen and (max-width: 947px) {
@@ -347,8 +347,8 @@ export const SubTitle = styled.div`
 
     @media only screen and (max-width: 375px) {
       iframe{
-        margin-top:65%; 
-        height:35%;
+        margin-top:60%; 
+        height:30%;
       }
     }
 
