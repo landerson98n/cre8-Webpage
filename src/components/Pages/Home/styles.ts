@@ -7,6 +7,7 @@ import star from '@mui/icons-material/Star'
 export const Container = styled.div`
   flex:1;
   overflow: hidden;
+
  `; 
 
 export const Contact = styled.div`
@@ -14,6 +15,13 @@ export const Contact = styled.div`
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 5%;
+  span{
+      font-family: 'Be Vietnam Pro';
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--button_color);
+      margin-left: 1%;
+  }
 `;
 
 
@@ -38,6 +46,7 @@ export const TelInput = styled(IMaskInput)`
 
   @media only screen and (max-width: 425px) {
     width: 100%;
+    font-size: 170%;
   }
 
 
@@ -63,6 +72,7 @@ export const InputText = styled.input`
 
   @media only screen and (max-width: 425px) {
     width: 100%;
+    font-size: 170%;
   }
 `; 
 const iconCSS = css`
@@ -308,7 +318,7 @@ export const SubTitle = styled.div`
           font-size: 2.6rem;
       }
       iframe{
-        margin-top:30%; 
+        margin-top:20%; 
       }
     }
     @media only screen and (max-width: 947px) {
@@ -451,6 +461,9 @@ export const ButtonAlign = styled.div`
   justify-content: center;
   @media only screen and (max-width: 425px) {
     margin-top: 50% ;
+    a{
+     width: 100%;
+    }
   }
 `
 export const Testimonial = styled.div`
@@ -626,6 +639,7 @@ export const  Schedule = styled.div`
 `
 export const Block = styled.div`
     width: 100%;
+
 `
 export const BlockTwo = styled.div`
   display: flex;

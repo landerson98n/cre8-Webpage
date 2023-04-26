@@ -46,9 +46,6 @@ import {
     BlockX
 } from "./styles"
 
-import estudando from '../../assets/estudando.webp'
-import educacao from '../../assets/educacao.webp'
-import livro from '../../assets/livro.webp'
 import globo from '../../assets/globo.webp'
 import exame from '../../assets/exame.webp'
 import teste from '../../assets/teste.webp'
@@ -59,9 +56,22 @@ import { Header } from "../../Header"
 import { Foot } from "../../Foot"
 import {useMediaQuery} from 'react-responsive'
 import {useRef, useEffect, useState} from 'react'
+import {useForm} from 'react-hook-form'
 import emailjs from '@emailjs/browser';
+import {z} from 'zod'
+import {zodResolver} from '@hookform/resolvers/zod'
+const createEmail = z.object({
+    nome : z.string().nonempty('Seu nome é obrigatório'),
+    email: z.string().nonempty('O email é obrigatório').email('Formato de email inválido'),
+    telefone: z.string().min(11, "O número de telefone está incompleto"),
+}) 
 
 export function Home(){
+    const {register, handleSubmit, formState: {errors}} = useForm(
+        {
+            resolver: zodResolver(createEmail)
+        }
+    )
     const [phone, setPhone] = useState('')
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
@@ -75,7 +85,8 @@ export function Home(){
         setWidth(slide_wrapper.current.scrollWidth - slide_wrapper.current.offsetWidth):undefined
     },[])
 
-    function sendEmail(){
+    function sendEmail(data: any){
+        setEnviar(true)
         const params = {
             message: `Nome: ${name}, Telefone: ${phone}, Email: ${email} `
         }
@@ -101,7 +112,7 @@ export function Home(){
                     </SubTitle>
                 </BlockEi>
                 <ButtonAlign>
-                    <Button title="Começe a aprender!"/> 
+                    <a style={{textDecoration:'none'}} href={'#form'}><Button title="Começe a aprender!"/></a>
                 </ButtonAlign>
                 <Testimonial>
                     <h1>Somos aprovados por todos os nossos alunos</h1>
@@ -301,7 +312,7 @@ export function Home(){
                 <TitleTwo>
                     <h1>Agende um teste de nivelamento <b>gratuito</b> e descubra seu nível de inglês!</h1>
                 </TitleTwo>
-                <Button title="Agendar teste agora!"/>
+                <a href='#form' style={{textDecoration:'none'}}><Button title="Agendar teste agora!"/></a> 
             </Block>
         </Schedule>
         
@@ -368,30 +379,43 @@ export function Home(){
             animate={{x: 10, opacity: 1}}
             transition={{duration:0.6}}
             >
-                <h1>Muito Obrigado! Entraremos em contato em breve</h1>
+                <h1>Agradecemos sua mensagem! Entraremos em contato em breve</h1>
             </TitleBlue>
             <div style={{width:'100%',marginTop:'1%', display:'flex', justifyContent:'center'}}>
                 <iframe src="https://embed.lottiefiles.com/animation/74623"></iframe>
             </div>
         </div>
         : 
-        <div>
-            <TitleBlue>
-                <h1>Entre em contato com a gente</h1>
-            </TitleBlue>
-            <div style={{width:'100%'}}>
-                <InputText placeholder='Seu nome' onChange={(event)=>setName(event.target.value)}></InputText>
-                <InputText placeholder='email@example.com' onChange={(event)=>setEmail(event.target.value)} type="email" required pattern=".+@globex\.com"></InputText>
-                <TelInput value={phone}
-                        mask="(99) 9999-99999"
-                        placeholder="Telefone"
-                        onChange={(event)=>setPhone(event.target.value)}>
-                </TelInput>
-            </div>
-            <div style={{width:'100%', marginTop:'3%', marginBottom:'10%'}} >
-                <Button onClick={()=>{sendEmail; setEnviar(true)}}  title="Enviar"/> 
-            </div>
-        </div> 
+        <form
+            onSubmit={handleSubmit(sendEmail)}
+            id="form"
+        >
+            <div>
+                <TitleBlue>
+                    <h1>Entre em contato com a gente</h1>
+                </TitleBlue>
+                <div style={{width:'100%'}}>
+                    <div>
+                        <InputText {...register('nome')} placeholder='Seu nome' onChange={(event)=>setName(event.target.value)}></InputText>
+                        <br/>
+                        <br/>
+                        {errors.nome && <span>{errors.nome.message}</span>}
+                    </div>
+                    <InputText {...register('email')} placeholder='email@example.com' onChange={(event)=>setEmail(event.target.value)} type="email" required  ></InputText>
+                    <TelInput {...register('telefone')} value={phone}
+                            mask="(99) 9999-99999"
+                            placeholder="Telefone"
+                            onChange={(event)=>setPhone(event.target.value)}>
+                    </TelInput>
+                    <br/><br/> 
+                    {errors.telefone && <span>{errors.telefone.message}</span>}
+                </div>
+                <div style={{width:'100%', marginTop:'3%', marginBottom:'10%'}} >
+                    <Button type='submit' onClick={()=>{}} title="Enviar"/> 
+                </div>
+            </div> 
+        </form>
+        
         }
     </Contact>
         <Foot/>

@@ -16,6 +16,7 @@
     "@expo-google-fonts/baloo": "^0.0.2",
     "@expo-google-fonts/dev": "^0.2.2",
     "@expo-google-fonts/inter": "^0.2.2",
+    "@hookform/resolvers": "^3.1.0",
     "@mui/icons-material": "^5.10.9",
     "@mui/material": "^5.10.12",
     "@react-navigation/native": "^6.0.13",
@@ -31,16 +32,15 @@
     "npm": "^8.19.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-elastic-carousel": "^0.11.5",
-    "react-google-font-loader": "^1.1.0",
+    "react-hook-form": "^7.43.9",
     "react-imask": "^6.6.1-alpha.1",
     "react-input-mask": "^2.0.4",
     "react-native-responsive-fontsize": "^0.5.1",
     "react-responsive": "^9.0.0",
     "react-router-dom": "^6.4.3",
-    "react-telefone-brasileiro": "^1.0.5",
     "styled-components": "^5.3.6",
-    "vite-plugin-fonts": "^0.6.0"
+    "vite-plugin-fonts": "^0.6.0",
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
