@@ -26,7 +26,7 @@ export function Equipe(){
     return(
         <div style={{overflow: 'hidden'}}>
          <Header/>
-            <Container>
+            <Container id='equipe'>
                 <Block>
                 <Title>
                     <h1>Conheça a nossa equipe!</h1>

@@ -31,7 +31,7 @@ export const TelInput = styled(IMaskInput)`
   margin-top: 3%;
   border: solid 2px;
   border-radius: 30px;
-  height: 12%;
+  height: 8vh;
   border-color: var(--background_blue) ;
   color: var(--background_blue);
   font-size: 250%;
@@ -57,7 +57,7 @@ export const InputText = styled.input`
   margin-top: 3%;
   border: solid 2px;
   border-radius: 30px;
-  height: 12%;
+  height: 8vh;
   border-color: var(--background_blue) ;
   color: var(--background_blue);
   font-size: 250%;
@@ -389,36 +389,55 @@ export const SubTitleTwo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   & h1{
       font-family: 'Be Vietnam Pro';
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 400;
       color: white;
       text-align: center;
-      margin-bottom: 35px;
+      margin-bottom: 5%;
+    }
+    & h2{
+      font-family: 'Be Vietnam Pro';
+      font-size: 2.5rem;
+      font-weight: 400;
+      color: white;
+      text-align: center;
+      margin-bottom: 5%;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
    @media only screen and (max-width: 1196px) {
-      h1{
+      h1, h2{
           font-size: 2.4rem;
       }
     }
     @media only screen and (max-width: 947px) {
-        h1{
+        h1, h2{
             font-size: 2.2rem;
         }
    }
    @media only screen and (max-width: 907px) {
-        h1{
+        h1, h2{
             font-size: 1.4rem;
+        }
+        h2{
+          height: 170px;
         }
     }
     @media only screen and (max-width: 425px) {
-      h1{
+      h1, h2{
             font-size: 1.2rem;
+        }
+        h2{
+          height: 200px;
         }
     }
     @media only screen and (max-width: 350px) {
-      h1{
+      h1, h2{
             font-size: 1.1rem;
         }
     }
@@ -499,24 +518,21 @@ export const Stars = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  height:100%;
-  display: flex;
-  align-items: center;
-  margin-top: 10rem;
-  background-color: white;
+  height: 150vh;
   padding-left: 10%;
   padding-right: 10%;
-  @media only screen and (max-width: 1196px) {
-    margin-top: 5rem;
-  }
+
   @media only screen and (max-width: 425px) {
+    height: 110vh;
     padding-left: 5rem;
     padding-right: 5rem;
   }
   @media only screen and (max-width: 375px) {
+    height: 90vh;
     padding-left: 3rem;
     padding-right: 2rem;
   }
+ 
   
 `
 
@@ -621,11 +637,12 @@ export const  Schedule = styled.div`
   height: 567px;
   padding-left: 10%;
   padding-right: 10%;
+  margin-top: 2%;
   @media only screen and (max-width: 947px) {
       height: 367px;
   }
   @media only screen and (max-width: 907px) {
-    margin-top: 60px;
+    
   }
   @media only screen and (max-width: 425px) {
     padding-left: 5rem;
@@ -639,8 +656,25 @@ export const  Schedule = styled.div`
 `
 export const Block = styled.div`
     width: 100%;
-
+      
 `
+export const Information = styled.div`
+    width: 100%;
+    background-color: var(--schedule);
+    display: flex;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2%;
+    border-radius: 20px;
+    @media only screen and (max-width: 425px) {
+      height: 25vh;
+    }
+     @media only screen and (max-width: 320px) {
+      height: 20vh;
+    }
+`
+
 export const BlockTwo = styled.div`
   display: flex;
   align-items: center;
@@ -672,18 +706,9 @@ export const BlockFive = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
-  margin-top: 40px;
-  margin-left: 60px;
-  margin-bottom: 60px;
-  
-  @media only screen and (max-width: 425px) {
-    margin-top: 1px;
-    margin-left: 1px;
-    margin-bottom: 1px;
-  }
-  @media only screen and (max-width: 425px) {
-    margin-left: 10px;
-  }
+  margin-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
 `
 export const Curses = styled.div`
   display: flex;
@@ -742,13 +767,13 @@ export const  TitleClass = styled.div`
       font-size: 5rem;
       font-weight: 700;
       color: white;
-      text-align: left;
+      text-align: center;
     }
     @media only screen and (max-width: 1196px) {
       h1{
           font-size: 3.6rem;
       }
-  }
+    }
     @media only screen and (max-width: 947px) {
         h1{
             font-size: 2.9rem;
@@ -821,7 +846,7 @@ export const BlockSix = styled.div`
 `
 export const  TitleClassTwo = styled.div`
     width: 100%;
-    margin-bottom:60px;
+    margin-bottom:30px;
    & h1{
       font-family: 'Baloo 2';
       font-size: 7rem;
@@ -940,22 +965,24 @@ export const Depoiments = styled.div`
   height: 684px;
   padding-left: 10%;
   padding-right: 10%;
-  margin-top: 120px;
-  margin-bottom: 12%;
+  margin-top: 10%;
+  margin-bottom: 20%;
   display: flex;
   justify-content: center;
   align-items: center;
   @media only screen and (max-width: 1196px) {
     height: 484px;
+    margin-top: 20%;
+    margin-bottom: 30%;
   }
   @media only screen and (max-width: 907px) {
     height: 284px;
+    margin-top: 30%;
+    margin-bottom: 35%;
   }
   @media only screen and (max-width: 425px) {
     padding-left: 5rem;
     padding-right: 5rem;
-    height: 180px;
-    margin-top: 10%;
   }
   @media only screen and (max-width: 375px) {
     padding-left: 3rem;
@@ -973,17 +1000,21 @@ export const Person = styled.div`
   display: flex;
   justify-items: center;
   background-color: #71A7ED;
-  height: 534px;
+  height: 800px;
   border-radius: 27px;
   margin-right: 4%;
   @media only screen and (max-width: 1196px) {
-    height: 400px;
+    height: 750px;
   }
   @media only screen and (max-width: 907px) {
-    height: 300px;
+    height: 600px;
   }
   @media only screen and (max-width: 425px) {
-      height: 166px;
+      height: 450px;
+      border-radius: 8px;
+  }
+  @media only screen and (max-width: 320px) {
+      height: 400px;
       border-radius: 8px;
   }
 `
@@ -991,11 +1022,10 @@ export const ImagePerson = styled.img`
   object-fit: cover;
   height: 100%;
   width: 100%;
-  max-height: 350px;
-  max-width: 350px;
+  max-height: 250px;
+  max-width: 250px;
   border-radius: 100%;
-  margin-left: 7%;
-  margin-right: 60px;
+  margin-bottom: 3%;
   @media only screen and (max-width: 1196px) {
     object-fit: cover;
     height: 100%;
