@@ -528,11 +528,16 @@ export const Content = styled.div`
     padding-right: 5rem;
   }
   @media only screen and (max-width: 375px) {
-    height: 90vh;
+    height: 110vh;
     padding-left: 3rem;
     padding-right: 2rem;
   }
  
+  @media only screen and (max-width: 320px) {
+    height: 90vh;
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
   
 `
 
