@@ -386,10 +386,12 @@ export const  BlockImageTwo = styled.div`
 
 export const SubTitleTwo = styled.div`
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  padding-left: 1%;
+  padding-right: 1%;
+  b{
+    margin-left: 5px;
+    margin-right: 5px;
+  }
   & h1{
       font-family: 'Be Vietnam Pro';
       font-size: 2.5rem;
@@ -405,8 +407,8 @@ export const SubTitleTwo = styled.div`
       color: white;
       text-align: center;
       margin-bottom: 5%;
-      height: 220px;
       display: flex;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
     }
@@ -424,21 +426,17 @@ export const SubTitleTwo = styled.div`
         h1, h2{
             font-size: 1.4rem;
         }
-        h2{
-          height: 170px;
-        }
+
     }
     @media only screen and (max-width: 425px) {
       h1, h2{
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
-        h2{
-          height: 200px;
-        }
+
     }
     @media only screen and (max-width: 350px) {
       h1, h2{
-            font-size: 1.1rem;
+            font-size: 0.9rem;
         }
     }
 `
@@ -518,23 +516,23 @@ export const Stars = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  height: 150vh;
+  height: 140vh;
   padding-left: 10%;
   padding-right: 10%;
 
   @media only screen and (max-width: 425px) {
-    height: 110vh;
+    height: 90vh;
     padding-left: 5rem;
     padding-right: 5rem;
   }
   @media only screen and (max-width: 375px) {
-    height: 110vh;
+    height: 90vh;
     padding-left: 3rem;
     padding-right: 2rem;
   }
  
   @media only screen and (max-width: 320px) {
-    height: 90vh;
+    height: 70vh;
     padding-left: 3rem;
     padding-right: 2rem;
   }
@@ -603,6 +601,12 @@ export const ImageCourse = styled.img`
   }
 `
 
+export const ImageInformation = styled.img`
+  width: 10%;
+  max-width: 380px;
+  max-height: 380px;
+`
+
 export const TextBlock = styled.div`
   width: 100%;
   @media only screen and (max-width: 425px) {
@@ -666,12 +670,12 @@ export const Block = styled.div`
 export const Information = styled.div`
     width: 100%;
     background-color: var(--schedule);
-    display: flex;
-    height: 35vh;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2%;
+    height: 65vh;
+    margin-bottom: 5%;
     border-radius: 20px;
+    @media only screen and (max-width: 768px) {
+      height: 40vh;
+    }
     @media only screen and (max-width: 425px) {
       height: 25vh;
     }
@@ -714,6 +718,7 @@ export const BlockFive = styled.div`
   margin-bottom: 5%;
   padding-left: 3%;
   padding-right: 3%;
+  margin-top: 10%;
 `
 export const Curses = styled.div`
   display: flex;
@@ -999,6 +1004,7 @@ export const Person = styled.div`
   width: 100%;  
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   max-width: 1300px;
   min-width: 93%;
