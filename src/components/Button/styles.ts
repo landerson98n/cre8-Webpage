@@ -4,14 +4,13 @@ export const Container = styled.button`
     background-color: var(--button_color) ;
     display: flex;
     width: 386px;
-    height: 96px;
+    height: 8vw;
     align-items: center;
     justify-content: center;
     border-radius: 11px;
     cursor: pointer;
     @media only screen and (max-width: 1024px) {
       width: 286px;
-      height: 86px;
     }
     @media only screen and (max-width: 425px) {
       width: 100%;

@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components"
 import instagram from '@mui/icons-material/Instagram'
+import whats from '@mui/icons-material/WhatsApp'
 import menu from '@mui/icons-material/Menu'
 import close from '@mui/icons-material/Close'
 
@@ -60,7 +61,7 @@ export const  Blockx = styled.div`
   
 
 
-  @media only screen and (min-width: 426px){
+  @media only screen and (min-width: 531px){
     display: none;
   }
 
@@ -78,7 +79,7 @@ export const BlockMenu = styled.div`
   align-items: center;
   justify-content: end;
   position: relative;
-  @media only screen and (min-width: 426px) {
+  @media only screen and (min-width: 531px) {
       display: none;
   }
 `
@@ -89,7 +90,7 @@ export const Block = styled.div`
     align-items: center;
     justify-content: space-between;
     position: relative;
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 530px) {
       display: none;
     }
 `; 
@@ -166,6 +167,10 @@ const iconCSS = css`
 `;
 
 export const IconInsta = styled(instagram)`
+    ${iconCSS}
+`; 
+
+export const IconWhats = styled(whats)`
     ${iconCSS}
 `; 
 

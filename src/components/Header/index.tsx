@@ -13,7 +13,8 @@ import{
     IconX,
     BlockThree,
     Blockv,
-    Blockx
+    Blockx,
+    IconWhats
 } from './styles'
 import LogoBranca from "../assets/logo_branca.webp"
 import { useState } from 'react'
@@ -42,7 +43,9 @@ export function Header(){
                                 whileTap={{scale:1.09}}
                             ><Link to={`/About`}>Sobre</Link></motion.div>
                         </Text>
-                        <a href='https://www.instagram.com/cre8language/' ><IconInsta sx={{ fontSize: 30 }}/> </a> 
+                        <div style={{width:'10%'}}><a href='https://www.instagram.com/cre8language/' ><IconInsta sx={{ fontSize: 30 }}/> </a> 
+                             <a href='https://www.instagram.com/cre8language/' style={{marginLeft:'10%'}}><IconWhats sx={{ fontSize: 30 }}/> </a> 
+                        </div>
                 </Block>
                         <Blockx 
                             as={motion.div} 

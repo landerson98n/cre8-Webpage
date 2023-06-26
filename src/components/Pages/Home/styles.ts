@@ -1,6 +1,8 @@
 import styled, {css} from "styled-components"
-import { RFValue } from 'react-native-responsive-fontsize';
+import Close from '@mui/icons-material/Close'
+import Right from '@mui/icons-material/Check'
 import  IMaskInput  from "react-input-mask";
+import whats from '@mui/icons-material/WhatsApp'
 
 import star from '@mui/icons-material/Star'
 
@@ -10,6 +12,17 @@ export const Container = styled.div`
 
  `; 
 
+const iconCSS = css`
+color:white;
+font-size: large;
+`;
+
+export const IconWhats = styled(whats)`
+    ${css`
+      color:green;
+      font-size: large;
+    `}
+`;
 export const Contact = styled.div`
   width: 100%;
   padding-left: 10%;
@@ -75,11 +88,7 @@ export const InputText = styled.input`
     font-size: 170%;
   }
 `; 
-const iconCSS = css`
-  width: 9.2rem;
-  height: 9.2rem;
-  color:white;
-`;
+
 
 export const BlockEi = styled.div`
   display: flex;
@@ -99,7 +108,7 @@ export const Hero = styled.div`
     width: 100%;
     height: 100%;
     max-height: 1480px;
-    height: 570px;
+    height: 44vw;
     background-color: var(--background_blue);
     align-items: center;
     display: grid;
@@ -128,52 +137,28 @@ export const Hero = styled.div`
 
 export const Title = styled.div`
   max-width: 1200px;
+  b{
+    color: #E08F8D;
+  }
   & h1{
       font-family: 'Baloo 2';
-      font-size: 6.0rem;
+      font-size: 6vw;
       font-weight: 700;
       color: white;
       text-align: center;
     }
     & h2{
       font-family: 'Baloo 2';
-      font-size: 6.0rem;
+      font-size: 6.0vw;
       font-weight: 700;
       color: var(--text_detail);
       text-align: center;
     }
-    @media only screen and (max-width: 1207px) {
-      width: 100%;
-      h1{
-          font-size: 3.6rem;
-      }
-    }
-    @media only screen and (max-width: 1196px) {
-      max-width: 90%;
-      h1{
-          font-size: 4rem;
-      }
-    }
-    @media only screen and (max-width: 947px) {
-        max-width: 95%;
-        h1{
-            font-size: 4rem;
-        }
-   }
-   @media only screen and (max-width: 907px) {
-       width: 100%;
-       h1{
-            font-size: 3rem;
-        }
-    }
+    
     @media only screen and (max-width: 425px) {
       h1{
-      font-family: 'Baloo 2';
-      font-size: 2rem;
-      font-weight: 700;
-      color: white;
-      text-align: left;
-    }
+        text-align: left;
+      }
     }
 `
 
@@ -181,67 +166,32 @@ export const TitleTwo = styled.div`
   max-width: 800px;
   & h1{
       font-family: 'Baloo 2';
-      font-size: 6.0rem;
+      font-size: 5vw;
       font-weight: 700;
       color: white;
       text-align: left;
     }
     & b{
       font-family: 'Baloo 2';
-      font-size: 6.0rem;
+      font-size: 5vw;
       font-weight: 700;
       color: var(--text_detail);
       text-align: left;
     }
 
-    @media only screen and (max-width: 947px) {
-      h1{
-          font-size: 4.4rem;
-      }
-      b{
-        font-size: 4.4rem;
-      }
-  }
-  @media only screen and (max-width: 425px) {
-      h1{
-          font-size: 2rem;
-      }
-      b{
-        font-size:2rem;
-      }
-      margin-bottom: 20px;
-  }
+   
 `
 
 export const TitleBlue = styled.div`
   width: 100%;
   & h1{
       font-family: 'Baloo 2';
-      font-size: 6rem;
+      font-size: 6vw;
       font-weight: 700;
       color: var(--background_blue);
       text-align: left;
     }
-  /* Smaller than standard 960 (devices and browsers) */
-  @media only screen and (max-width: 1196px) {
-      h1{
-          font-size: 4rem;
-      }
-  }
-
-  @media only screen and (max-width: 947px) {
-      width: 90%;
-      h1{
-          font-size: 3.7rem;
-      }
-  }
-
-  @media only screen and (max-width: 907px) {
-       width: 100%;
-       h1{
-        font-size:2.6rem;
-       }
-  }
+  
   @media only screen and (max-width: 425px) {
     display: table-header-group;
   }
@@ -392,17 +342,41 @@ export const SubTitleTwo = styled.div`
     margin-left: 5px;
     margin-right: 5px;
   }
+  
+
+  & h5{
+      font-family: 'Be Vietnam Pro';
+      font-size: 3vw;
+      font-weight: 400;
+      color: var(--schedule);
+      text-align: center;
+      margin-bottom: 5%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
   & h1{
       font-family: 'Be Vietnam Pro';
-      font-size: 2.5rem;
+      font-size: 1.9vw;
       font-weight: 400;
       color: white;
       text-align: center;
       margin-bottom: 5%;
     }
+
+    & h3{
+      font-family: 'Be Vietnam Pro';
+      font-size: 1.9vw;
+      font-weight: 400;
+      color: white;
+      text-align: center;
+      margin-top: -5%;
+      margin-bottom: 5%;
+    }
     & h2{
       font-family: 'Be Vietnam Pro';
-      font-size: 2.5rem;
+      font-size: 1.9vw;
       font-weight: 400;
       color: white;
       text-align: center;
@@ -412,59 +386,35 @@ export const SubTitleTwo = styled.div`
       align-items: center;
       justify-content: center;
     }
-   @media only screen and (max-width: 1196px) {
-      h1, h2{
-          font-size: 2.4rem;
-      }
-    }
-    @media only screen and (max-width: 947px) {
-        h1, h2{
-            font-size: 2.2rem;
-        }
-   }
-   @media only screen and (max-width: 907px) {
-        h1, h2{
-            font-size: 1.4rem;
-        }
-
-    }
-    @media only screen and (max-width: 425px) {
-      h1, h2{
-            font-size: 1.1rem;
-        }
-
-    }
-    @media only screen and (max-width: 350px) {
-      h1, h2{
-            font-size: 0.9rem;
-        }
-    }
+   
 `
+
+
+export const IconClose = styled(Close)`
+    ${css`
+      color:red;
+      font-size: large;
+    `}
+`; 
+
+export const IconAccepted = styled(Right)`
+    ${css`
+      color:green;
+      font-size: large;
+    `}
+`;
 
 export const SubTitleBlue = styled.div`
   width: 100%;
+  
   & h1{
       font-family: 'Be Vietnam Pro';
-      font-size: 3rem;
+      font-size: 3vw;
       font-weight: 400;
       color: var(--background_blue);
       text-align: left;
     }
-    @media only screen and (max-width: 1196px) {
-      h1{
-          font-size: 2rem;
-      }
-  }
-  @media only screen and (max-width: 947px) {
-    h1{
-          font-size: 2rem;
-      }
-  }
-  @media only screen and (max-width: 907px) {
-       h1{
-        font-size:1.2rem;
-       }
-  }
+    
   @media only screen and (max-width: 425px) {
     display: table-footer-group;
   }
@@ -477,7 +427,7 @@ export const ButtonAlign = styled.div`
   padding-bottom: 30px;
   justify-content: center;
   @media only screen and (max-width: 425px) {
-    margin-top: 50% ;
+    margin-top: 60% ;
     a{
      width: 100%;
     }
@@ -512,31 +462,14 @@ export const Stars = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
+  padding-top: 10%;
 `
 
 export const Content = styled.div`
   width: 100%;
-  height: 140vh;
+  height: 120vw;
   padding-left: 10%;
   padding-right: 10%;
-
-  @media only screen and (max-width: 425px) {
-    height: 90vh;
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-  @media only screen and (max-width: 375px) {
-    height: 90vh;
-    padding-left: 3rem;
-    padding-right: 2rem;
-  }
- 
-  @media only screen and (max-width: 320px) {
-    height: 70vh;
-    padding-left: 3rem;
-    padding-right: 2rem;
-  }
-  
 `
 
 export const Image = styled.img`
@@ -570,43 +503,34 @@ export const Image = styled.img`
 export const ImageCourse = styled.img`
   width: 100%;
   height:100%;
-  max-width: 380px;
-  max-height: 380px;
+  max-width: 25vw;
+  max-height: 25vw;
   margin-right: 10%;
   margin-left: 10%;
-  @media only screen and (max-width: 1196px) {
-      width: 100%;
-      height:100%;
-      max-width: 280px;
-      max-height: 280px;
-  }
-  @media only screen and (max-width: 907px) {
-      width: 100%;
-      height:100%;
-      max-width: 180px;
-      max-height: 180px;
-  }
-  @media only screen and (max-width: 425px) {
-      width: 100%;
-      height:100%;
-      max-width: 100px;
-      max-height: 100px;
-  }
-  @media only screen and (max-width: 320px) {
-      width: 100%;
-      height:100%;
-      max-width: 70px;
-      max-height: 70px;
-      margin-left: 5%;
-  }
+  
 `
 
 export const ImageInformation = styled.img`
-  width: 10%;
+  width: 15%;
   max-width: 380px;
   max-height: 380px;
 `
 
+
+export const ContentContainer = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 7vw;
+  background-color: var(--background_blue);
+  border-radius: 2vw;
+  margin-top: 2vw;
+  padding-left: 10%;
+  h1{
+    text-align: left;
+    margin-bottom: 0%;
+  }
+`
 export const TextBlock = styled.div`
   width: 100%;
   @media only screen and (max-width: 425px) {
@@ -634,6 +558,13 @@ export const Persons = styled.div`
   overflow: hidden;
   cursor: grab;
 `
+export const Explanation = styled.div`
+  width: 100%;
+  height: 40vw;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-top: 5vw;
+`
 
 
 export const  Schedule = styled.div`
@@ -643,50 +574,27 @@ export const  Schedule = styled.div`
   justify-items: center;
   background-color: var(--schedule);
   width: 100%;
-  height: 567px;
+  height: 50vw;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 2%;
-  @media only screen and (max-width: 947px) {
-      height: 367px;
-  }
-  @media only screen and (max-width: 907px) {
-    
-  }
-  @media only screen and (max-width: 425px) {
-    padding-left: 5rem;
-    padding-right: 5rem;
-    height: 203px;
-  }
-  @media only screen and (max-width: 375px) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
+
 `
 export const Block = styled.div`
     width: 100%;
-      
 `
 export const Information = styled.div`
     width: 100%;
-    background-color: var(--schedule);
-    height: 65vh;
-    margin-bottom: 5%;
+    background-color: white;
+    height: 30vw;
+    margin-bottom: 10%;
     border-radius: 20px;
-    @media only screen and (max-width: 768px) {
-      height: 40vh;
-    }
-    @media only screen and (max-width: 425px) {
-      height: 25vh;
-    }
-     @media only screen and (max-width: 320px) {
-      height: 20vh;
-    }
 `
 
 export const BlockTwo = styled.div`
   display: flex;
   align-items: center;
+  margin-top: 10vw;
   width: 100%;
   @media only screen and (max-width: 1196px) {
       margin-top: 3%;
@@ -718,7 +626,7 @@ export const BlockFive = styled.div`
   margin-bottom: 5%;
   padding-left: 3%;
   padding-right: 3%;
-  margin-top: 10%;
+  margin-top: 5%;
 `
 export const Curses = styled.div`
   display: flex;
@@ -728,42 +636,17 @@ export const Curses = styled.div`
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 5%;
-  margin-bottom: 5%;
-  @media only screen and (max-width: 425px) {
-    margin-bottom: -15%;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    height: 800px;
-  }
-  @media only screen and (max-width: 375px) {
-    padding-left: 3rem;
-    padding-right: 2.5rem;
-  }
-  @media only screen and (max-width: 320px) {
-    margin-bottom: -35%;
-    height: 760px;
-  }
+  height: 230vw;
+  
 `
 export const  ClassOne = styled.div`
-  background-color: #F4D35E;
+  background-color: #2B69DB;
   width: 100%;
-  height: 590px;
+  height: 60vw;
   border-radius: 43px;
-  justify-content: center;
   margin-top: 10%;
   margin-bottom: 10%;
-  @media only screen and (max-width: 1196px) {
-    height: 460px;
-  }
-  @media only screen and (max-width: 907px) {
-    height: 300px;
-  }
   @media only screen and (max-width: 425px) {
-    height: 180px;
-    border-radius: 14px;
-  }
-  @media only screen and (max-width: 320px) {
-    height: 150px;
     border-radius: 14px;
   }
 `
@@ -859,32 +742,10 @@ export const  TitleClassTwo = styled.div`
     margin-bottom:30px;
    & h1{
       font-family: 'Baloo 2';
-      font-size: 7rem;
+      font-size: 7vw;
       font-weight: 700;
       color: #71A7ED;
       text-align: left;
-    }
-    @media only screen and (max-width: 1196px) {
-      max-width: 90%;
-      h1{
-          font-size: 6rem;
-      }
-    }
-    @media only screen and (max-width: 947px) {
-        margin-bottom:40px; 
-   }
-   @media only screen and (max-width: 907px) {
-        max-width: 95%;
-        h1{
-            font-size: 5rem;
-        }
-   }
-   @media only screen and (max-width: 425px) {
-      margin-bottom: 10px;
-      max-width: 95%;
-        h1{
-            font-size: 2rem;
-        }
     }
 `
 export const Lista = styled.div`
@@ -892,78 +753,37 @@ export const Lista = styled.div`
   margin-right: 2%;
   & li{ 
       font-family: 'Be Vietnam Pro';
-      font-size: 3.6rem;
+      font-size: 2.7vw;
       font-weight: 400;
       color: white;
   }
-  @media only screen and (max-width: 1196px) {
-      li{
-          font-size: 2.6rem;
-      }
-  }
-  @media only screen and (max-width: 947px) {
-      li{
-          font-size: 2.2rem;
-      }
-  }
-  @media only screen and (max-width: 1196px) {
-    li{
-          font-size: 1.8rem;
-      }
-  }
-  @media only screen and (max-width: 425px) {
-      li{
-        font-size: 1.2rem;
-        }
-  }
 
-  @media only screen and (max-width: 355px) {
-      li{
-        font-size: 1rem;
-        }
-  }
 `
 export const ClassTwo = styled.div`
-  background-color: #E15C54;
+  background-color: #2B69DB;
   width: 100%;
-  height: 590px;
+  height: 60vw;
   border-radius: 43px;
   justify-content: center;
   margin-bottom: 10%;
-  @media only screen and (max-width: 1196px) {
-    height: 460px;
-  }
-  @media only screen and (max-width: 907px) {
-    height: 300px;
-  }
+
   @media only screen and (max-width: 425px) {
-    height: 180px;
     border-radius: 14px;
   }
-  @media only screen and (max-width: 320px) {
-    height: 150px;
-  }
+
 `
 
 export const ClassThree = styled.div`
   background-color: #2B69DB;
   width: 100%;
-  height: 590px;
+  height: 60vw;
   border-radius: 43px;
   justify-content: center;
-  @media only screen and (max-width: 1196px) {
-    height: 460px;
-  }
-  @media only screen and (max-width: 907px) {
-    height: 300px;
-  }
+
   @media only screen and (max-width: 425px) {
-    height: 180px;
     border-radius: 14px;
   }
-  @media only screen and (max-width: 320px) {
-    height: 140px;
-  }
+
 `
 export const ImageTwo = styled.img`
   width: 450px;
@@ -972,7 +792,7 @@ export const ImageTwo = styled.img`
 `
 export const Depoiments = styled.div`
   width: 100%;
-  height: 684px;
+  height: 75vw;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 10%;
@@ -980,23 +800,9 @@ export const Depoiments = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media only screen and (max-width: 1196px) {
-    height: 484px;
-    margin-top: 20%;
-    margin-bottom: 30%;
-  }
-  @media only screen and (max-width: 907px) {
-    height: 284px;
-    margin-top: 30%;
-    margin-bottom: 35%;
-  }
-  @media only screen and (max-width: 425px) {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-  @media only screen and (max-width: 375px) {
-    padding-left: 3rem;
-    padding-right: 3rem;
+
+  @media only screen and (max-width: 530px) {
+    height: 85vw;
   }
   
 `
@@ -1010,60 +816,24 @@ export const Person = styled.div`
   min-width: 93%;
   display: flex;
   justify-items: center;
-  background-color: #71A7ED;
-  height: 800px;
-  border-radius: 27px;
+  background-color: #457cc4;
+  height: 80vw;
+  border-radius: 2vw;
   margin-right: 4%;
-  @media only screen and (max-width: 1196px) {
-    height: 750px;
-  }
-  @media only screen and (max-width: 907px) {
-    height: 600px;
-  }
+
   @media only screen and (max-width: 425px) {
-      height: 450px;
-      border-radius: 8px;
-  }
-  @media only screen and (max-width: 320px) {
-      height: 400px;
-      border-radius: 8px;
+      height: 80vw;
   }
 `
 export const ImagePerson = styled.img`
   object-fit: cover;
   height: 100%;
   width: 100%;
-  max-height: 250px;
-  max-width: 250px;
+  max-height: 25vw;
+  max-width: 25vw;
   border-radius: 100%;
   margin-bottom: 3%;
-  @media only screen and (max-width: 1196px) {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    max-height: 250px;
-    max-width: 250px;
-    }
-    @media only screen and (max-width: 907px) {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-      max-height: 180px;
-      max-width: 180px;
-    }
-    @media only screen and (max-width: 425px) {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-      max-height: 100px;
-      max-width: 100px;
-      margin-left: 5%;
-      margin-right: 5%;
-  }
-  @media only screen and (max-width: 425px) {
-    max-height: 90px;
-      max-width: 90px;
-  }
+  
 `
 
 export const Mission = styled.div`

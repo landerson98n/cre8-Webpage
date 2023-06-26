@@ -135,6 +135,24 @@ Graduada em Comunicação Social (Universidade Federal do Piauí)</li>
                                 </ul>
                             </Lista>
                         </Person> 
+
+                        
+                        <Person>
+                            <BlockFive>
+                            <ImagePerson alt="Sara Xavier" src={sara}/>
+                                <Block>
+                                    <TitleClass><h1>Teacher Gustavo</h1></TitleClass>
+                                </Block>  
+                            </BlockFive>
+                            <Lista>
+                                <ul>
+                                    <li>7 anos de experiência </li>
+                                    <li>Graduado em geologia</li>
+                                    <li>TOEIC C1 (ETS)</li>
+                                    <li>Experiência em inglês para negócios</li>
+                                </ul>
+                            </Lista>
+                        </Person> 
                     </Equipes>
                 </Block>
             </Container>
