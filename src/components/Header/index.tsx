@@ -43,7 +43,7 @@ export function Header(){
                                 whileTap={{scale:1.09}}
                             ><Link to={`/About`}>Sobre</Link></motion.div>
                         </Text>
-                        <div style={{width:'10%'}}><a href='https://www.instagram.com/cre8language/' ><IconInsta sx={{ fontSize: 30 }}/> </a> 
+                        <div style={{width:'20%'}}><a href='https://www.instagram.com/cre8language/' ><IconInsta sx={{ fontSize: 30 }}/> </a> 
                              <a href='https://www.instagram.com/cre8language/' style={{marginLeft:'10%'}}><IconWhats sx={{ fontSize: 30 }}/> </a> 
                         </div>
                 </Block>

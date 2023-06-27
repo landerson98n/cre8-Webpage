@@ -192,8 +192,8 @@ export function Home(){
                 <BlockEi>
                     <SubTitle>                   
                         <h1>Aprenda inglês com quem sabe e
-                            desbloqueie um mundo de oportunidades</h1><br/><br/>
-                            {isMobile?  <iframe src="https://embed.lottiefiles.com/animation/49242"></iframe>  : null}
+                            desbloqueie um mundo de oportunidades</h1>
+                            {isMobile?  <iframe style={{width:'75%'}} src="https://embed.lottiefiles.com/animation/49242"></iframe>  : null}
                     </SubTitle>
                 </BlockEi>
                 <ButtonAlign>

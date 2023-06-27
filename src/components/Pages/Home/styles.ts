@@ -427,7 +427,7 @@ export const ButtonAlign = styled.div`
   padding-bottom: 30px;
   justify-content: center;
   @media only screen and (max-width: 425px) {
-    margin-top: 60% ;
+    margin-top: 70% ;
     a{
      width: 100%;
     }
@@ -559,7 +559,7 @@ export const Persons = styled.div`
 `
 export const Explanation = styled.div`
   width: 100%;
-  height: 90vw;
+  height: 95vw;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 5vw;
