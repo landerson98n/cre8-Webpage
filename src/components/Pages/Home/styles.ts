@@ -525,9 +525,8 @@ export const ContentContainer = styled.div`
   background-color: var(--background_blue);
   border-radius: 2vw;
   margin-top: 2vw;
-  padding-left: 10%;
   h1{
-    text-align: left;
+    text-align: center;
     margin-bottom: 0%;
   }
 `
@@ -560,7 +559,7 @@ export const Persons = styled.div`
 `
 export const Explanation = styled.div`
   width: 100%;
-  height: 60vw;
+  height: 90vw;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 5vw;

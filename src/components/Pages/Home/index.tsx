@@ -203,35 +203,26 @@ export function Home(){
        </Hero>
 
         <Explanation>
+            <TitleBlue><h1 style={{fontSize:'6vw'}}>Por que escolher a cre8?</h1></TitleBlue>
+            <SubTitleBlue >
+                    <h1 style={{fontSize:'3vw'}}><em>Fale Inglês desde sua primeira aula!</em></h1>
+            </SubTitleBlue>
 
-            <div style={{width:'100%', display:'flex', justifyContent:'space-between', marginTop:'5vw'}}>
+            <div style={{width:'100%', marginTop:'5vw'}}>
 
-                <div style={{width:'53%', height:'20vw', display:'flex', flexDirection:'column', alignItems:'end', marginTop:'1vw', justifyContent:'space-between'}}>
+                <div style={{width:'100%', height:'20vw', display:'flex', flexDirection:'column', alignItems:'end', marginTop:'0.5vw', justifyContent:'space-between'}}>
                     
-                    <TitleBlue><h1 style={{fontSize:'3.8vw'}}>Por que escolher a cre8?</h1></TitleBlue>
-                    <SubTitleBlue >
-                            <h1 style={{fontSize:'2.4vw'}}><em>Fale Inglês desde sua primeira aula!</em></h1>
-                    </SubTitleBlue>
-  
-                    <div style={{display:'flex', marginTop:'2vw'}}>
-                        <IconClose sx={{ fontSize: '4vw' }}/>
+                    <div style={{display:'flex', marginTop:'0.3vw'}}>
                         <SubTitleBlue>
                                 <h1 style={{fontSize:'2.5vw'}}>Sem fórmula mágica, sem método milagroso, sem plataforma que você vai
                                     parar de acessar no primeiro mês.</h1>
                         </SubTitleBlue>
                     </div>
-                    
-                 
-                    <div style={{display:'flex', marginTop:'4vw'}}>
-                        <IconAccepted sx={{ fontSize: '4vw' }}/>
-                        <SubTitleBlue >
-                                <h1 style={{fontSize:'2.5vw'}}>Aulas com assuntos úteis ao seu cotidiano profissional, acadêmico ou pessoal, aulas focadas em conversação, e suporte contínuo dos professores.</h1>
-                        </SubTitleBlue>
-                    </div>
+            
                     
                 </div>
 
-                <div style={{width:'40%', height:'400vw', display:'flex', flexDirection:'column', alignItems:'end'}}>
+                <div style={{width:'100%', height:'300vw', marginTop:'-8vw'}}>
                     <ContentContainer>
                         <SubTitleTwo><h1>Professores certificados internacionalmente</h1></SubTitleTwo>
                     </ContentContainer>
