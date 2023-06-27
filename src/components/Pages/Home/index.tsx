@@ -137,7 +137,7 @@ export function Home(){
             sub:'Gestora de Compras',
             sub1: "Grupo Vanguarda",
             city: "Teresina - PI",
-            text:'A Cre8 foi uma indicação maravilhosa de uma grande amiga e desde então recomendo sempre a escola e o Teacher Saulo para amigos. As aulas são bem organizadas, visuais e com um conteúdo super atual, tornando o aprendizado da língua aliado a temas relevantes e profundos! ',
+            text:'Já tive experiências em outras escolas, e apesar do contato com inglês, nunca senti segurança ao falar. Estou há quase um ano e meio na Cre8 por me sentir à vontade para conversar, errar e aprender com aulas que trazem tópicos e situações em que podemos praticar o inglês na vida real!',
             image:ana,
         },
         {
@@ -197,47 +197,32 @@ export function Home(){
                     </SubTitle>
                 </BlockEi>
                 <ButtonAlign>
-                    <a style={{textDecoration:'none'}} href={'#form'}><Button title="Começe a aprender!"/></a>
+                    <a style={{textDecoration:'none'}} href={'#form'}><Button title="Quero falar Inglês!"/></a>
                 </ButtonAlign>
             </Block>
        </Hero>
 
-        <Explanation>
-            <TitleBlue><h1 style={{fontSize:'6vw'}}>Por que escolher a cre8?</h1></TitleBlue>
-            <SubTitleBlue >
-                    <h1 style={{fontSize:'3vw'}}><em>Fale Inglês desde sua primeira aula!</em></h1>
-            </SubTitleBlue>
-
-            <div style={{width:'100%', marginTop:'5vw'}}>
-
-                <div style={{width:'100%', height:'20vw', display:'flex', flexDirection:'column', alignItems:'end', marginTop:'0.5vw', justifyContent:'space-between'}}>
-                    
-                    <div style={{display:'flex', marginTop:'0.3vw'}}>
-                        <SubTitleBlue>
-                                <h1 style={{fontSize:'2.5vw'}}>Sem fórmula mágica, sem método milagroso, sem plataforma que você vai
-                                    parar de acessar no primeiro mês.</h1>
-                        </SubTitleBlue>
+       <Content>   
+        {informations.map((information) => {
+                return (
+                    <Information>
+                    <div style={{ width: '100%', display: 'flex', justifyContent: 'center', paddingTop: '2%' }}>
+                        <ImageInformation src={information.src} alt="Globo, livro de inglês e uma maçã" />
                     </div>
-            
+                    <TitleClass>
+                        <h1 style={{backgroundColor:'var(--schedule)'}}>{information.title}</h1>  
+                    </TitleClass>
+                    <div style={{marginTop:'5%'}}>
+                        <SubTitleTwo dangerouslySetInnerHTML={{__html: information.subtitle}} />
+                    </div>
                     
-                </div>
+                    </Information>
+                );
+            })}
+    
+       </Content>
 
-                <div style={{width:'100%', height:'300vw', marginTop:'-8vw'}}>
-                    <ContentContainer>
-                        <SubTitleTwo><h1>Professores certificados internacionalmente</h1></SubTitleTwo>
-                    </ContentContainer>
-                    <ContentContainer>
-                        <SubTitleTwo><h1>Turmas pequenas</h1></SubTitleTwo>
-                    </ContentContainer>
-                    <ContentContainer>
-                        <SubTitleTwo><h1>Valores competitivos</h1></SubTitleTwo>
-                    </ContentContainer>
-                    <ContentContainer>
-                    <SubTitleTwo><h1>Horários flexíveis</h1></SubTitleTwo>
-                    </ContentContainer>
-                </div> 
-            </div>
-        </Explanation>
+        
 
         <Depoiments>
             <Block>
@@ -289,25 +274,43 @@ export function Home(){
             
         </Depoiments>
     
-       <Content>   
-        {informations.map((information) => {
-                return (
-                    <Information>
-                    <div style={{ width: '100%', display: 'flex', justifyContent: 'center', paddingTop: '2%' }}>
-                        <ImageInformation src={information.src} alt="Globo, livro de inglês e uma maçã" />
-                    </div>
-                    <TitleClass>
-                        <h1 style={{backgroundColor:'var(--schedule)'}}>{information.title}</h1>  
-                    </TitleClass>
-                    <div style={{marginTop:'5%'}}>
-                        <SubTitleTwo dangerouslySetInnerHTML={{__html: information.subtitle}} />
-                    </div>
+        <Explanation>
+            <TitleBlue><h1 style={{fontSize:'6vw'}}>Por que escolher a cre8?</h1></TitleBlue>
+            <SubTitleBlue >
+                    <h1 style={{fontSize:'3vw'}}><em>Fale Inglês desde sua primeira aula!</em></h1>
+            </SubTitleBlue>
+
+            <div style={{width:'100%', marginTop:'5vw'}}>
+
+                <div style={{width:'100%', height:'20vw', display:'flex', flexDirection:'column', alignItems:'end', marginTop:'0.5vw', justifyContent:'space-between'}}>
                     
-                    </Information>
-                );
-            })}
-    
-       </Content>
+                    <div style={{display:'flex', marginTop:'0.3vw'}}>
+                        <SubTitleBlue>
+                                <h1 style={{fontSize:'2.5vw'}}>Sem fórmula mágica, sem método milagroso, sem plataforma que você vai
+                                    parar de acessar no primeiro mês.</h1>
+                        </SubTitleBlue>
+                    </div>
+            
+                    
+                </div>
+
+                <div style={{width:'100%', height:'300vw', marginTop:'-8vw'}}>
+                    <ContentContainer>
+                        <SubTitleTwo><h1>Professores certificados internacionalmente</h1></SubTitleTwo>
+                    </ContentContainer>
+                    <ContentContainer>
+                        <SubTitleTwo><h1>Turmas pequenas</h1></SubTitleTwo>
+                    </ContentContainer>
+                    <ContentContainer>
+                        <SubTitleTwo><h1>Valores competitivos</h1></SubTitleTwo>
+                    </ContentContainer>
+                    <ContentContainer>
+                    <SubTitleTwo><h1>Horários flexíveis</h1></SubTitleTwo>
+                    </ContentContainer>
+                </div> 
+            </div>
+        </Explanation>
+      
 
         <Schedule>
             <Block>
@@ -421,7 +424,13 @@ export function Home(){
                     </div>
                     <div style={{width:'100%', marginTop:'3%', marginBottom:'10%'}} >
                         <Button type='submit' onClick={()=>{}} title="Enviar"/> 
-                      {isMobile? <a href='https://www.instagram.com/cre8language/' style={{width:'100%', display:'flex', justifyContent:'center', marginTop:'10%'}}><IconWhats sx={{ fontSize: 30 }}/> </a>: null}  
+                      {isMobile? 
+                        <>  
+                            <a href='https://www.instagram.com/cre8language/' style={{width:'100%', display:'flex', justifyContent:'center', marginTop:'10%', textDecorationColor:'green'}}><IconWhats sx={{ fontSize: 30 }}/> 
+                            <h1 style={{width:'50%', fontFamily: 'Be Vietnam Pro', fontSize:'4vw', color:'green', marginLeft:'2vw'}}>
+                                Enviar Whatsapp
+                            </h1></a>
+                        </>: null}  
                     </div>
                 </div> 
             </form>
