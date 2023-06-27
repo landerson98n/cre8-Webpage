@@ -192,8 +192,8 @@ export function Home(){
                 <BlockEi>
                     <SubTitle>                   
                         <h1>Aprenda inglês com quem sabe e
-                            desbloqueie um mundo de oportunidades</h1>
-                            {isMobile? <iframe src="https://embed.lottiefiles.com/animation/49242"></iframe> : null}
+                            desbloqueie um mundo de oportunidades</h1><br/><br/>
+                            {isMobile?  <iframe src="https://embed.lottiefiles.com/animation/49242"></iframe>  : null}
                     </SubTitle>
                 </BlockEi>
                 <ButtonAlign>
@@ -208,15 +208,15 @@ export function Home(){
 
                 <div style={{width:'53%', height:'20vw', display:'flex', flexDirection:'column', alignItems:'end', marginTop:'1vw', justifyContent:'space-between'}}>
                     
-                    <TitleBlue><h1 style={{fontSize:'3.5vw'}}>Por que escolher a cre8?</h1></TitleBlue>
+                    <TitleBlue><h1 style={{fontSize:'3.8vw'}}>Por que escolher a cre8?</h1></TitleBlue>
                     <SubTitleBlue >
-                            <h1 style={{fontSize:'2vw'}}><em>Fale Inglês desde sua primeira aula!</em></h1>
+                            <h1 style={{fontSize:'2.4vw'}}><em>Fale Inglês desde sua primeira aula!</em></h1>
                     </SubTitleBlue>
   
                     <div style={{display:'flex', marginTop:'2vw'}}>
                         <IconClose sx={{ fontSize: '4vw' }}/>
                         <SubTitleBlue>
-                                <h1 style={{fontSize:'2vw'}}>Sem fórmula mágica, sem método milagroso, sem plataforma que você vai
+                                <h1 style={{fontSize:'2.5vw'}}>Sem fórmula mágica, sem método milagroso, sem plataforma que você vai
                                     parar de acessar no primeiro mês.</h1>
                         </SubTitleBlue>
                     </div>
@@ -225,7 +225,7 @@ export function Home(){
                     <div style={{display:'flex', marginTop:'4vw'}}>
                         <IconAccepted sx={{ fontSize: '4vw' }}/>
                         <SubTitleBlue >
-                                <h1 style={{fontSize:'2vw'}}>Aulas com assuntos úteis ao seu cotidiano profissional, acadêmico ou pessoal, aulas focadas em conversação, e suporte contínuo dos professores.</h1>
+                                <h1 style={{fontSize:'2.5vw'}}>Aulas com assuntos úteis ao seu cotidiano profissional, acadêmico ou pessoal, aulas focadas em conversação, e suporte contínuo dos professores.</h1>
                         </SubTitleBlue>
                     </div>
                     

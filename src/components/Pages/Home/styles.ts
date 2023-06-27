@@ -358,7 +358,7 @@ export const SubTitleTwo = styled.div`
     }
   & h1{
       font-family: 'Be Vietnam Pro';
-      font-size: 1.9vw;
+      font-size: 2.4vw;
       font-weight: 400;
       color: white;
       text-align: center;
@@ -376,7 +376,7 @@ export const SubTitleTwo = styled.div`
     }
     & h2{
       font-family: 'Be Vietnam Pro';
-      font-size: 1.9vw;
+      font-size: 2.5vw;
       font-weight: 400;
       color: white;
       text-align: center;
@@ -521,7 +521,7 @@ export const ContentContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  height: 7vw;
+  height: 11vw;
   background-color: var(--background_blue);
   border-radius: 2vw;
   margin-top: 2vw;
@@ -560,7 +560,7 @@ export const Persons = styled.div`
 `
 export const Explanation = styled.div`
   width: 100%;
-  height: 40vw;
+  height: 60vw;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 5vw;
@@ -822,7 +822,7 @@ export const Person = styled.div`
   margin-right: 4%;
 
   @media only screen and (max-width: 425px) {
-      height: 80vw;
+      height: 100vw;
   }
 `
 export const ImagePerson = styled.img`
