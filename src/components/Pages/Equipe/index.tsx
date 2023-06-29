@@ -1,7 +1,7 @@
 import React from 'react'
 import { Header } from '../../Header'
 import { Foot } from '../../Foot'
-import landerson from '../../assets/Landerson.webp'
+import gustavo from '../../assets/gustavo.png'
 import saulo from '../../assets/saulo.webp'
 import sara from '../../assets/sara.webp'
 import fabiana from '../../assets/fabiana.webp'
@@ -146,7 +146,7 @@ Graduada em Comunicação Social (Universidade Federal do Piauí)</li>
                         
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Sara Xavier" src={sara}/>
+                            <ImagePerson alt="Gustavo" src={gustavo}/>
                                 <Block>
                                     <TitleClass><h1>Teacher Gustavo</h1></TitleClass>
                                 </Block>  

@@ -25,31 +25,11 @@ export const ImagePerson = styled.img`
   object-fit: cover;
   height: 100%;
   width: 100%;
-  max-height: 280px;
-  max-width: 280px;
+  max-height: 20vw;
+  max-width: 20vw;
   border-radius: 100%;
   margin-right: 8%;
-  @media only screen and (max-width: 1196px) {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    max-height: 250px;
-    max-width: 250px;
-    }
-    @media only screen and (max-width: 907px) {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-      max-height: 180px;
-      max-width: 180px;
-    }
-    @media only screen and (max-width: 425px) {
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-      max-height: 100px;
-      max-width: 100px;
-  }
+  
   @media only screen and (max-width: 320px) {
       max-height: 90px;
       max-width: 90px;
@@ -121,19 +101,15 @@ export const Person = styled.div`
   display: block;
   justify-items: center;
   background-color: #71A7ED;
-  height: 580px;
-  border-radius: 27px;
+  height: 50vw;
+  border-radius: 5vw;
   align-items: center;
   margin-top: 5%;
-  @media only screen and (max-width: 1196px) {
-    height: 500px;
+  @media only screen and (max-width: 635px) {
+    height: 80vw;
   }
-  @media only screen and (max-width: 907px) {
-    height: 400px;
-  }
-  @media only screen and (max-width: 425px) {
-      height: 306px;
-      border-radius: 8px;
+  @media only screen and (max-width: 320px) {
+    height: 130vw;
   }
 `
 

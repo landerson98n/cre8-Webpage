@@ -25,6 +25,7 @@ export function Header(){
     return(
 
         <Container>
+                <meta name="theme-color" content="#319197"></meta>
                 <motion.div whileHover={{scale:1.07}} whileTap={{scale:1.1}}><Link to={`/`}><Blockv><Logo src={LogoBranca} alt="Logo Cre8"/></Blockv></Link> </motion.div>
                 <Block>
                         <Text>
