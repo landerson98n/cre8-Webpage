@@ -426,7 +426,7 @@ export function Home(){
                         <Button type='submit' onClick={()=>{}} title="Enviar"/> 
                       {isMobile? 
                         <>  
-                            <a href='https://www.instagram.com/cre8language/' style={{width:'100%', display:'flex', justifyContent:'center', marginTop:'10%', textDecorationColor:'green'}}><IconWhats sx={{ fontSize: 30 }}/> 
+                            <a href='https://api.whatsapp.com/message/YMMTW2V3I5YWP1?autoload=1&app_absent=0' style={{width:'100%', display:'flex', justifyContent:'center', marginTop:'10%', textDecorationColor:'green'}}><IconWhats sx={{ fontSize: 30 }}/> 
                             <h1 style={{width:'50%', fontFamily: 'Be Vietnam Pro', fontSize:'4vw', color:'green', marginLeft:'2vw'}}>
                                 Enviar Whatsapp
                             </h1></a>

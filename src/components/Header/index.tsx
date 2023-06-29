@@ -44,7 +44,7 @@ export function Header(){
                             ><Link to={`/About`}>Sobre</Link></motion.div>
                         </Text>
                         <div style={{width:'20%'}}><a href='https://www.instagram.com/cre8language/' ><IconInsta sx={{ fontSize: 30 }}/> </a> 
-                             <a href='https://www.instagram.com/cre8language/' style={{marginLeft:'10%'}}><IconWhats sx={{ fontSize: 30 }}/> </a> 
+                             <a href='https://api.whatsapp.com/message/YMMTW2V3I5YWP1?autoload=1&app_absent=0' style={{marginLeft:'10%'}}><IconWhats sx={{ fontSize: 30 }}/> </a> 
                         </div>
                 </Block>
                         <Blockx 
