@@ -55,6 +55,7 @@ import {
 
 import Lottie from "lottie-react";
 import mundo from '../../assets/mundo.json'
+import emailAnimation from '../../assets/email.json'
 import papo from '../../assets/bater-papo (1).png'
 import pencil from '../../assets/pencil.png'
 import distintivo from '../../assets/distintivo.png'
@@ -395,7 +396,7 @@ export function Home(){
                     <h1>Agradecemos sua mensagem! Entraremos em contato em breve</h1>
                 </TitleBlue>
                 <div style={{width:'100%',marginTop:'1%', display:'flex', justifyContent:'center'}}>
-                    <iframe src="https://embed.lottiefiles.com/animation/74623"></iframe>
+                    <Lottie animationData={emailAnimation} loop={true} />
                 </div>
             </div>
             : 
