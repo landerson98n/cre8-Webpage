@@ -53,9 +53,8 @@ import {
     IconAccepted
 } from "./styles"
 
-import globo from '../../assets/globo.webp'
-import exame from '../../assets/exame.webp'
-import teste from '../../assets/teste.webp'
+import Lottie from "lottie-react";
+import mundo from '../../assets/mundo.json'
 import papo from '../../assets/bater-papo (1).png'
 import pencil from '../../assets/pencil.png'
 import distintivo from '../../assets/distintivo.png'
@@ -68,7 +67,6 @@ import laise from '../../assets/laise.webp'
 import daniela from '../../assets/daniela.webp'
 import ana from '../../assets/ana.webp'
 import gabriela from '../../assets/gabriela.webp'
-
 import { motion } from "framer-motion";
 import { Button } from "../../Button"
 import { Header } from "../../Header"
@@ -95,7 +93,7 @@ export function Home(){
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [enviar, setEnviar] = useState(false)
-    const isMobile = useMediaQuery({ query: '(max-width: 531px)' })
+    const isMobile = useMediaQuery({ query: '(max-width: 425px)' })
     const [width, setWidth] = useState(0)
     const slide_wrapper : any = useRef()
     const informations = [
@@ -193,8 +191,9 @@ export function Home(){
                     <SubTitle>                   
                         <h1>Aprenda inglês com quem sabe e
                             desbloqueie um mundo de oportunidades</h1>
-                            {isMobile?  <iframe style={{width:'85%'}} src="https://embed.lottiefiles.com/animation/49242"></iframe>  : null}
+                            
                     </SubTitle>
+                    {isMobile?  <div style={{width:'100%', marginTop:'6vw'}}><Lottie animationData={mundo} loop={true} /></div>  : null}
                 </BlockEi>
                 <ButtonAlign>
                     <a style={{textDecoration:'none'}} href={'#form'}><Button title="Quero falar Inglês!"/></a>

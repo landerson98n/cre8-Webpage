@@ -61,7 +61,7 @@ export const  Blockx = styled.div`
   
 
 
-  @media only screen and (min-width: 531px){
+  @media only screen and (min-width: 630px){
     display: none;
   }
 
@@ -79,7 +79,7 @@ export const BlockMenu = styled.div`
   align-items: center;
   justify-content: end;
   position: relative;
-  @media only screen and (min-width: 531px) {
+  @media only screen and (min-width: 630px) {
       display: none;
   }
 `
@@ -90,7 +90,7 @@ export const Block = styled.div`
     align-items: center;
     justify-content: space-between;
     position: relative;
-    @media only screen and (max-width: 530px) {
+    @media only screen and (max-width: 630px) {
       display: none;
     }
 `; 

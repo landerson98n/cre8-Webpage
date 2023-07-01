@@ -93,7 +93,9 @@ export const InputText = styled.input`
 export const BlockEi = styled.div`
   display: flex;
   justify-content: center;
+  
   @media only screen and (max-width: 425px) {
+      flex-direction: column;
       justify-content: flex-start;
   }
 `
@@ -423,11 +425,10 @@ export const SubTitleBlue = styled.div`
 export const ButtonAlign = styled.div`
   width: 100%;
   display: flex;
-  padding-top: 5vw;
   padding-bottom: 3vw;
   justify-content: center;
+  margin-top: 7vw;
   @media only screen and (max-width: 425px) {
-    margin-top: 70% ;
     a{
      width: 100%;
     }
