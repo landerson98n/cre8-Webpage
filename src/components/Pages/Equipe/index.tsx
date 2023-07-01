@@ -1,19 +1,11 @@
 import React from 'react'
 import { Header } from '../../Header'
 import { Foot } from '../../Foot'
-import gustavo from '../../assets/gustavo.png'
-import saulo from '../../assets/saulo.webp'
-import sara from '../../assets/sara.webp'
-import fabiana from '../../assets/fabiana.webp'
-import lorena from '../../assets/lorena.webp'
-import werllison from '../../assets/werllison.webp'
-import camilo from '../../assets/camilo.webp'
 import {
     Container,
     Title,
     Equipes,
     ImagePerson,
-    SubTitleOne,
     SubTitleTwo,
     Lista,
     Person,
@@ -34,7 +26,7 @@ export function Equipe(){
                     <Equipes>
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="saulo" src={saulo}/>
+                            <ImagePerson alt="saulo" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/saulo.webp'/>
                                 <Block>
                                     <TitleClass><h1>Teatcher Saulo</h1></TitleClass>
                                     <SubTitleTwo><h1>Diretor Acadêmico</h1></SubTitleTwo> 
@@ -60,7 +52,7 @@ export function Equipe(){
 
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Teacher Camilo" src={camilo}/>
+                            <ImagePerson alt="Teacher Camilo" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/camilo.webp'/>
                                 <Block>
                                     <TitleClass><h1>Teacher Camilo</h1></TitleClass>
                                     <SubTitleTwo><h1>Experiência como professor em diversos níveis e contextos.</h1></SubTitleTwo> 
@@ -80,7 +72,7 @@ O que mais lhe traz prazer é ver o mar, viajar e cozinhar como um exercício de
 
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Teacher Lorena" src={lorena}/>
+                            <ImagePerson alt="Teacher Lorena" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/lorena.webp'/>
                                 <Block>
                                     <TitleClass><h1>Teacher Lorena</h1></TitleClass>
                                     <SubTitleTwo><h1>Experiência com educação internacional</h1></SubTitleTwo> 
@@ -99,7 +91,7 @@ Tem um estilo vintage, ama a cultura francesa, sabe dirigir caminhões, e é pro
 
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Teacher Fabiana" src={fabiana}/>
+                            <ImagePerson alt="Teacher Fabiana" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/fabiana.webp'/>
                                 <Block>
                                     <TitleClass><h1>Teacher Fabiana</h1></TitleClass>
                                     <SubTitleTwo><h1>Experiência com ambiente corporativo internacional</h1></SubTitleTwo> 
@@ -118,7 +110,7 @@ Tem um estilo vintage, ama a cultura francesa, sabe dirigir caminhões, e é pro
 
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Teacher Werllison" src={werllison}/>
+                            <ImagePerson alt="Teacher Werllison" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/werllison.webp'/>
                                 <Block>
                                     <TitleClass><h1>Teacher Werllison</h1></TitleClass>
                                     <SubTitleTwo><h1>Experiência como Supervisor de Exames de Cambridge</h1></SubTitleTwo> 
@@ -138,7 +130,7 @@ Tem um estilo vintage, ama a cultura francesa, sabe dirigir caminhões, e é pro
 
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Sara Xavier" src={sara}/>
+                            <ImagePerson alt="Sara Xavier" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/sara.webp'/>
                                 <Block>
                                     <TitleClass><h1>Sara Xavier</h1></TitleClass>
                                     <SubTitleTwo><h1>Experiência com design, social media e community management</h1></SubTitleTwo>
@@ -161,7 +153,7 @@ Tem um estilo vintage, ama a cultura francesa, sabe dirigir caminhões, e é pro
                         
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Gustavo" src={gustavo}/>
+                            <ImagePerson alt="Gustavo" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/gustavo.webp'/>
                                 <Block>
                                     <TitleClass><h1>Teacher Gustavo</h1></TitleClass>
                                     <SubTitleTwo><h1>Experiência com Inglês corporativo/para negócios</h1></SubTitleTwo>

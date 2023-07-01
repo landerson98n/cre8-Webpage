@@ -26,7 +26,7 @@ export default createGlobalStyle`
       --text_blue: #2B69DB;
       --text_white: #2B69DB;
       --text_detail: #EA7165;
-      --button_color:#E15C54;
+      --button_color:#E13E35;
       --title: #2B69DB;
       --schedule:#71A7ED;
   }

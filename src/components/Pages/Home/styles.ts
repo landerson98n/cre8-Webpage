@@ -139,9 +139,7 @@ export const Hero = styled.div`
 
 export const Title = styled.div`
   max-width: 1200px;
-  b{
-    color: #E08F8D;
-  }
+
   & h1{
       font-family: 'Baloo 2';
       font-size: 6vw;
@@ -198,45 +196,7 @@ export const TitleBlue = styled.div`
     display: table-header-group;
   }
 `
-export const TitleOt= styled.div` 
-  margin-bottom: 20px;
-  & h1{
-      font-family: 'Baloo 2';
-      font-size: 5.4rem;
-      font-weight: 700;
-      color: var(--background_blue);
-      text-align: left;
-    }
-    @media only screen and (max-width: 947px) {
-      width: 100%;
-      h1{
-            font-size: 3.5rem;
-        }
-    }
-    @media only screen and (max-width: 907px) {
-      width: 100%;
-      h1{
-            font-size: 2.6rem;
-        }
-    }
-    @media only screen and (max-width: 425px) {
-      width: 100%;
-      h1{
-            font-size: 2.6rem;
-        }
-    }
-`
 
-export const BlockImage = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: end;
-  @media only screen and (max-width: 425px) {
-    display: table-row-group;
-    display: flex;
-    justify-content: center;
-  }
-`
 export const SubTitle = styled.div`
   width: 45%;
   display: flex;
@@ -325,17 +285,6 @@ export const SubTitle = styled.div`
 
 `
 
-export const  BlockImageTwo = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  @media only screen and (max-width: 425px) {
-    display: table-row-group;
-    display: flex;
-    justify-content: center;
-  }
-`
-
 export const SubTitleTwo = styled.div`
   width: 100%;
   padding-left: 1%;
@@ -350,7 +299,7 @@ export const SubTitleTwo = styled.div`
       font-family: 'Be Vietnam Pro';
       font-size: 3vw;
       font-weight: 400;
-      color: var(--schedule);
+      color: var(--background_blue);
       text-align: center;
       margin-bottom: 5%;
       display: flex;
@@ -388,23 +337,15 @@ export const SubTitleTwo = styled.div`
       align-items: center;
       justify-content: center;
     }
+
+    @media only screen and (max-width: 425px) {
+      h2, h3, h1, h5{
+        font-size: 3vw;
+      }
+    }
    
 `
 
-
-export const IconClose = styled(Close)`
-    ${css`
-      color:red;
-      font-size: large;
-    `}
-`; 
-
-export const IconAccepted = styled(Right)`
-    ${css`
-      color:green;
-      font-size: large;
-    `}
-`;
 
 export const SubTitleBlue = styled.div`
   width: 100%;
@@ -427,37 +368,14 @@ export const ButtonAlign = styled.div`
   display: flex;
   padding-bottom: 3vw;
   justify-content: center;
-  margin-top: 7vw;
+  margin-top: 4vw;
   @media only screen and (max-width: 425px) {
     a{
      width: 100%;
     }
   }
 `
-export const Testimonial = styled.div`
-  & h1{
-      font-family: 'Be Vietnam Pro';
-      font-size: 2.5rem;
-      font-weight: 400;
-      color: white;
-      text-align: center;
-    }
-    @media only screen and (max-width: 1024px) {
-       h1{
-        font-size:1.8rem;
-       }
-    }
-    @media only screen and (max-width: 768px) {
-       h1{
-        font-size:1.4rem;
-       }
-    }
-    @media only screen and (max-width: 425px) {
-      h1{
-        font-size: 1.2rem;
-      }
-    }
-`
+
 export const Stars = styled.div`
   display: flex;
   width: 100%;
@@ -473,33 +391,7 @@ export const Content = styled.div`
   padding-right: 10%;
 `
 
-export const Image = styled.img`
-  width: 100%;
-  height: 100%;
-  max-width: 450px;
-  max-height: 450px;
-  @media only screen and (max-width: 1196px) {
-      width: 100%;
-      height: 100%;
-      max-width: 350px;
-      max-height: 350px;
-    }
-  @media only screen and (max-width: 947px) {
-      width: 100%;
-      height: 100%;
-      max-width: 300px;
-      max-height: 300px;
-  }
-  @media only screen and (max-width: 907px) {
-      width: 100%;
-      height: 100%;
-      max-width: 250px;
-      max-height: 250px;
-    }
-  @media only screen and (max-width: 425px) {
-    display: table-footer-group;
-  }
-`
+
 
 export const ImageCourse = styled.img`
   width: 100%;
@@ -513,6 +405,7 @@ export const ImageCourse = styled.img`
 
 export const ImageInformation = styled.img`
   width: 15%;
+  height: 100%;
   max-width: 380px;
   max-height: 380px;
 `
@@ -531,22 +424,7 @@ export const ContentContainer = styled.div`
     margin-bottom: 0%;
   }
 `
-export const TextBlock = styled.div`
-  width: 100%;
-  @media only screen and (max-width: 425px) {
-    display: table-header-group;
-  }
-`
 
-export const FirstContent = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  @media only screen and (max-width: 425px) {
-    display: table;
-  }
-`
 
 export const BlockX = styled.div`
   width: 100%;
@@ -572,7 +450,7 @@ export const  Schedule = styled.div`
   margin-top: 100px;
   align-items: center;
   justify-items: center;
-  background-color: var(--schedule);
+  background-color: var(--background_blue);
   width: 100%;
   height: 50vw;
   padding-left: 10%;
@@ -600,25 +478,13 @@ export const BlockTwo = styled.div`
       margin-top: 3%;
   }
 `
-export const BlockSeven = styled.div`
-  display: flex;
-  justify-content: center;
-  width: 100%;
-`
+
 
 export const BlockThree = styled.div`
   margin-top: 50px;
   width: 100%;
 `
-export const BlockFour = styled.div`
-  margin-top: 70px;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  @media only screen and (max-width: 425px) {
-    margin-top: 30px;
-  }
-`
+
 export const BlockFive = styled.div`
   display: flex;
   width: 100%;
@@ -734,9 +600,7 @@ export const Foot = styled.div`
   background-color: #2B69DB;
   border-top: 1px #fff;
 `
-export const BlockSix = styled.div`
-  width: 100%;
-`
+
 export const  TitleClassTwo = styled.div`
     width: 100%;
     margin-bottom:30px;
@@ -816,7 +680,7 @@ export const Person = styled.div`
   min-width: 93%;
   display: flex;
   justify-items: center;
-  background-color: #457cc4;
+  background-color:var(--background_blue);
   height: 80vw;
   border-radius: 2vw;
   margin-right: 4%;

@@ -185,40 +185,7 @@ export const Block = styled.div`
     width: 100%;
 `
 
-export const SubTitleOne = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  & h1{
-      font-family: 'Be Vietnam Pro';
-      font-size: 3rem;
-      font-weight: 400;
-      color: white;
-      text-align: center;
-      margin-bottom: 35px;
-    }
-   @media only screen and (max-width: 1196px) {
-      h1{
-          font-size: 2.4rem;
-      }
-    }
-    @media only screen and (max-width: 947px) {
-        h1{
-            font-size: 2.2rem;
-        }
-   }
-   @media only screen and (max-width: 907px) {
-        h1{
-            font-size: 1.4rem;
-        }
-    }
-    @media only screen and (max-width: 425px) {
-      h1{
-            font-size: 1.2rem;
-        }
-    }
-`
+
 
 
 export const Title = styled.div`

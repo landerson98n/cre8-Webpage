@@ -9,7 +9,6 @@ import {
     BlockTrhee
 } from './style'
 import { Header } from '../../Header'
-import LogoBranca from "../../assets/logo_branca.webp"
 import { Foot } from '../../Foot'
 
 export function About(){
@@ -18,7 +17,7 @@ export function About(){
          <Header/>
             <Container>
                 <Block>
-                    <Logo src={LogoBranca}/>
+                    <Logo src='https://ik.imagekit.io/6zjortsiwu/logo_branca.webp'/>
                 </Block>
                 <SubTitle>
                     <h1><em>Uma escola de Inglês acessível, prática e de qualidade!</em><br/><br/>

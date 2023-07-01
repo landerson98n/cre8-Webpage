@@ -8,17 +8,12 @@ import {
     Title,
     SubTitle,
     ButtonAlign,
-    Testimonial,
     IconStar,
     Stars,
     Content,
     TitleBlue,
     SubTitleBlue,
-    Image,
     IconWhats,
-    FirstContent,
-    TextBlock,
-    TitleOt,
     Schedule,
     TitleTwo,
     Block,
@@ -31,43 +26,25 @@ import {
     ClassTwo,
     ClassThree,
     BlockThree,
-    BlockFour,
     Depoiments,
     Person,
     ImagePerson,
     BlockFive,
     TitleClassTwo,
-    BlockSix,
-    BlockSeven,
     BlockEi,
     SubTitleTwo,
-    BlockImage,
-    BlockImageTwo,
     Persons,
     Explanation,
     BlockX,
     Information,
     ImageInformation,
     ContentContainer,
-    IconClose,
-    IconAccepted
 } from "./styles"
+
 
 import Lottie from "lottie-react";
 import mundo from '../../assets/mundo.json'
 import emailAnimation from '../../assets/email.json'
-import papo from '../../assets/bater-papo (1).png'
-import pencil from '../../assets/pencil.png'
-import distintivo from '../../assets/distintivo.png'
-import globo2 from '../../assets/globo.png'
-import diplomado from '../../assets/diplomado.png'
-import Kleber from '../../assets/Kleber.jpeg'
-import lampada from '../../assets/lampada.png'
-import lilian from '../../assets/lilian.webp'
-import laise from '../../assets/laise.webp'
-import daniela from '../../assets/daniela.webp'
-import ana from '../../assets/ana.webp'
-import gabriela from '../../assets/gabriela.webp'
 import { motion } from "framer-motion";
 import { Button } from "../../Button"
 import { Header } from "../../Header"
@@ -99,17 +76,17 @@ export function Home(){
     const slide_wrapper : any = useRef()
     const informations = [
         {
-            src: distintivo,
+            src: isMobile? 'https://ik.imagekit.io/6zjortsiwu/tr:w-200/distintivo.webp':'https://ik.imagekit.io/6zjortsiwu/distintivo.webp' ,
             title:'Qualidade',
             subtitle:'<h5>Ensino de alta qualidade com nossa equipe de professores certificados internacionalmente.</h5>'
         },
         {
-            src: diplomado,
+            src: isMobile? 'https://ik.imagekit.io/6zjortsiwu/tr:w-200/diplomado.webp':'https://ik.imagekit.io/6zjortsiwu/diplomado.webp' ,
             title:'+100 Alunos',
             subtitle:'<h5>Mais de 100 alunos em 12 estados do Brasil e 6 países.</h5>'
         },
         {
-            src: lampada,
+            src: isMobile?'https://ik.imagekit.io/6zjortsiwu/tr:w-200/lampada.png' : 'https://ik.imagekit.io/6zjortsiwu/lampada.png',
             title:'Soluções',
             subtitle:'<div><h5>Curso regular, aulas de conversação, inglês para negócios, e o que mais você precisar.</h5></div>'
         }
@@ -121,7 +98,7 @@ export function Home(){
             sub1: "AB InBev",
             city: "Campinas - SP",
             text:'Sempre me comuniquei bem em Inglês, mas senti a necessidade de focar em Inglês corporativo com uma linguagem mais formal. Encontro na Cre8 o fit perfeito para isso, já que a instituição se preocupa em entregar aulas coerentes com suas necessidades!',
-            image:lilian,
+            image: isMobile ? 'https://ik.imagekit.io/6zjortsiwu/tr:w-200/lilian.webp' : 'https://ik.imagekit.io/6zjortsiwu/lilian.webp',
         },
         {
             name:"Gabriela Xavier",
@@ -129,7 +106,7 @@ export function Home(){
             sub1: "Hospital Albert Einstein",
             city: "São Paulo - SP",
             text:'A Cre8 foi uma indicação maravilhosa de uma grande amiga e desde então recomendo sempre a escola e o Teacher Saulo para amigos. As aulas são bem organizadas, visuais e com um conteúdo super atual, tornando o aprendizado da língua aliado a temas relevantes e profundos! ',
-            image:gabriela,
+            image: isMobile ? 'https://ik.imagekit.io/6zjortsiwu/tr:w-200/gabriela.webp': 'https://ik.imagekit.io/6zjortsiwu/gabriela.webp',
         },
         {
             name:"Ana Jéssica",
@@ -137,7 +114,7 @@ export function Home(){
             sub1: "Grupo Vanguarda",
             city: "Teresina - PI",
             text:'Já tive experiências em outras escolas, e apesar do contato com inglês, nunca senti segurança ao falar. Estou há quase um ano e meio na Cre8 por me sentir à vontade para conversar, errar e aprender com aulas que trazem tópicos e situações em que podemos praticar o inglês na vida real!',
-            image:ana,
+            image: isMobile ?  'https://ik.imagekit.io/6zjortsiwu/tr:w-200/ana.webp' : 'https://ik.imagekit.io/6zjortsiwu/ana.webp',
         },
         {
             name:"Laise Paula",
@@ -145,7 +122,7 @@ export function Home(){
             sub1: " ",
             city: "Caxias - MA",
             text:'Estudo na Cre8 desde o comecinho. Posso falar com certeza que foi essencial para meu grande desenvolvimento! Hoje me sinto muito mais segura ao falar e escrever em inglês. Além disso, os professores são excelentes profissionais e as aulas dinâmicas e interessantes. Amo estudar na Cre8 e indico sempre!',
-            image:laise,
+            image:isMobile ?  'https://ik.imagekit.io/6zjortsiwu/tr:w-200/laise.webp' :  'https://ik.imagekit.io/6zjortsiwu/laise.webp',
         },
         {
             name:"Daniela Corrêa ",
@@ -153,7 +130,7 @@ export function Home(){
             sub1: "Yara Internationa",
             city: "Oslo - Noruega",
             text:'Apesar de ter estudado inglês desde criança, me sentia muito insegura com relação a conversação e gramática. As aulas individuais me fizeram ter confiança para assumir um dos maiores desafios da minha carreira: me mudar para a Noruega! Amei o método da Cre8, com aulas dinâmicas e muita conversação!',
-            image:daniela,
+            image:isMobile ? 'https://ik.imagekit.io/6zjortsiwu/tr:w-200/daniela.webp' : 'https://ik.imagekit.io/6zjortsiwu/daniela.webp',
         },
         {
             name:"Kleber Ferbones",
@@ -161,7 +138,7 @@ export function Home(){
             sub1: "Ambev",
             city: "São José dos Campos - SP",
             text:'Tenho feito aulas desde o início de 2022, e tem sido uma ótima opção para mim que busco um aprendizado personalizado, focando nos pontos que preciso melhorar. Outra vantagem é a flexibilidade de horários, que me ajudam demais! Obrigado pela paciência e ensinamentos rs',
-            image:Kleber,
+            image:isMobile ? 'https://ik.imagekit.io/6zjortsiwu/tr:w-300/Kleber.webp':'https://ik.imagekit.io/6zjortsiwu/Kleber.webp',
         }
     ]
     useEffect(()=>{
@@ -184,7 +161,7 @@ export function Home(){
             <Block>
                 <BlockEi>
                     <Title>
-                    {isMobile? <h1>Conquiste o <br/> mundo com <br/><b>fluência em inglês</b></h1>: <h1>Conquiste o mundo com <br/><b>fluência em inglês</b></h1>}
+                    {isMobile? <h1>Conquiste o <br/> mundo com <br/><b>fluência em inglês!</b></h1>: <h1>Conquiste o mundo com <br/><b>fluência em inglês!</b></h1>}
                     </Title>
                     
                 </BlockEi>
@@ -194,7 +171,7 @@ export function Home(){
                             desbloqueie um mundo de oportunidades</h1>
                             
                     </SubTitle>
-                    {isMobile?  <div style={{width:'100%', marginTop:'6vw'}}><Lottie animationData={mundo} loop={true} /></div>  : null}
+                    {isMobile?  <div style={{width:'100%', marginTop:'6vw'}}><Lottie animationData={mundo} loop={true}  /></div>  : null}
                 </BlockEi>
                 <ButtonAlign>
                     <a style={{textDecoration:'none'}} href={'#form'}><Button title="Quero falar Inglês!"/></a>
@@ -202,27 +179,25 @@ export function Home(){
             </Block>
        </Hero>
 
-       <Content>   
-        {informations.map((information) => {
-                return (
-                    <Information>
-                    <div style={{ width: '100%', display: 'flex', justifyContent: 'center', paddingTop: '2%' }}>
-                        <ImageInformation src={information.src} alt="Globo, livro de inglês e uma maçã" />
-                    </div>
-                    <TitleClass>
-                        <h1 style={{backgroundColor:'var(--schedule)'}}>{information.title}</h1>  
-                    </TitleClass>
-                    <div style={{marginTop:'5%'}}>
-                        <SubTitleTwo dangerouslySetInnerHTML={{__html: information.subtitle}} />
-                    </div>
-                    
-                    </Information>
-                );
-            })}
-    
-       </Content>
-
+        <Content>   
+            {informations.map((information) => {
+                    return (
+                        <Information>
+                        <div style={{ width: '100%', display: 'flex', justifyContent: 'center', paddingTop: '2%' }}>
+                            <ImageInformation src={information.src} alt="Globo, livro de inglês e uma maçã" />
+                        </div>
+                        <TitleClass>
+                            <h1 style={{backgroundColor:'var(--background_blue)'}}>{information.title}</h1>  
+                        </TitleClass>
+                        <div style={{marginTop:'5%'}}>
+                            <SubTitleTwo dangerouslySetInnerHTML={{__html: information.subtitle}} />
+                        </div>
+                        
+                        </Information>
+                    );
+                })}
         
+        </Content>
 
         <Depoiments>
             <Block>
@@ -334,7 +309,7 @@ export function Home(){
                             <TitleClass><h1>Turmas Regulares</h1></TitleClass>
                             <Lista style={{listStyleType:'none', textAlign:'center', paddingLeft:'10%', paddingRight:'10%', marginBottom:'5%'}}><li>Estude com pessoas de diversos lugares do Brasil e até do mundo</li></Lista>
                             <BlockTwo>
-                                <ImageCourse src={globo2} alt="Globo, livro de inglês e uma maçã"/>
+                                <ImageCourse src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/globo.webp' alt="Globo, livro de inglês e uma maçã"/>
                                 <Lista>
                                         <ul>
                                             <li>Até 5 alunos por turma </li>
@@ -351,7 +326,7 @@ export function Home(){
                         <TitleClass><h1>Aulas VIP</h1></TitleClass>
                         <Lista style={{listStyleType:'none', textAlign:'center', paddingLeft:'10%', paddingRight:'10%', marginBottom:'5%'}}><li>O curso 1 to 1 foi feito para quem:</li></Lista>
                         <BlockTwo>
-                            <ImageCourse src={papo} alt="Nota máxima prova"/>
+                            <ImageCourse src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/baterPapo.webp' alt="Nota máxima prova"/>
                             <Lista>
                                     <ul>
                                         <li>Prefere aulas exclusivas </li>
@@ -367,7 +342,7 @@ export function Home(){
                         <Lista style={{listStyleType:'none', textAlign:'center', paddingLeft:'10%', paddingRight:'10%', marginBottom:'5%'}}><li>Exames de Proficiência são a porta de entrada para inúmeras oportunidades:</li></Lista>
 
                         <BlockTwo>
-                            <ImageCourse src={pencil} alt="Teste ou prova de inglês"/>
+                            <ImageCourse src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/pencil.webp' alt="Teste ou prova de inglês"/>
                             <Lista>
                                     <ul>
                                         <li>Imigrar para outro país</li>

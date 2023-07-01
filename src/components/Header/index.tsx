@@ -16,7 +16,6 @@ import{
     Blockx,
     IconWhats
 } from './styles'
-import LogoBranca from "../assets/logo_branca.webp"
 import { useState } from 'react'
 import { motion } from "framer-motion";
 import { BrowserRouter as Router, Link } from "react-router-dom";
@@ -26,7 +25,7 @@ export function Header(){
 
         <Container>
                 <meta name="theme-color" content="#2B69DB"></meta>
-                <motion.div whileHover={{scale:1.07}} whileTap={{scale:1.1}}><Link to={`/`}><Blockv><Logo src={LogoBranca} alt="Logo Cre8"/></Blockv></Link> </motion.div>
+                <motion.div whileHover={{scale:1.07}} whileTap={{scale:1.1}}><Link to={`/`}><Blockv><Logo src='https://ik.imagekit.io/6zjortsiwu/tr:w-400/logo_branca.webp' alt="Logo Cre8"/></Blockv></Link> </motion.div>
                 <Block>
                         <Text>
                             <motion.div
