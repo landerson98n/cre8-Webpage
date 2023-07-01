@@ -38,8 +38,6 @@ export const ImagePerson = styled.img`
 export const SubTitleTwo = styled.div`
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 3.5%;
   & h1{
       font-family: 'Be Vietnam Pro';
@@ -101,15 +99,15 @@ export const Person = styled.div`
   display: block;
   justify-items: center;
   background-color: #71A7ED;
-  height: 50vw;
+  height: 60vw;
   border-radius: 5vw;
   align-items: center;
   margin-top: 5%;
   @media only screen and (max-width: 635px) {
-    height: 80vw;
+    height: 120vw;
   }
   @media only screen and (max-width: 320px) {
-    height: 130vw;
+    height: 150vw;
   }
 `
 

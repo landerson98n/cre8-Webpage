@@ -141,7 +141,7 @@ Tem um estilo vintage, ama a cultura francesa, sabe dirigir caminhões, e é pro
                             <ImagePerson alt="Sara Xavier" src={sara}/>
                                 <Block>
                                     <TitleClass><h1>Sara Xavier</h1></TitleClass>
-                                    <SubTitleTwo>Experiência com design, social media e community management</SubTitleTwo>
+                                    <SubTitleTwo><h1>Experiência com design, social media e community management</h1></SubTitleTwo>
                                     
 
                                 </Block>  
@@ -164,7 +164,7 @@ Tem um estilo vintage, ama a cultura francesa, sabe dirigir caminhões, e é pro
                             <ImagePerson alt="Gustavo" src={gustavo}/>
                                 <Block>
                                     <TitleClass><h1>Teacher Gustavo</h1></TitleClass>
-                                    <SubTitleTwo>Experiência com Inglês corporativo/para negócios</SubTitleTwo>
+                                    <SubTitleTwo><h1>Experiência com Inglês corporativo/para negócios</h1></SubTitleTwo>
 
                                 </Block>  
                             </BlockFive>

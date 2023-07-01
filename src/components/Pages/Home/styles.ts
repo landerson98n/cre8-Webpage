@@ -423,8 +423,8 @@ export const SubTitleBlue = styled.div`
 export const ButtonAlign = styled.div`
   width: 100%;
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 5vw;
+  padding-bottom: 3vw;
   justify-content: center;
   @media only screen and (max-width: 425px) {
     margin-top: 70% ;
