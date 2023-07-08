@@ -28,7 +28,7 @@ export function Equipe(){
                             <BlockFive>
                             <ImagePerson alt="saulo" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/saulo.webp'/>
                                 <Block>
-                                    <TitleClass><h1>Teatcher Saulo</h1></TitleClass>
+                                    <TitleClass><h1>Teacher Saulo</h1></TitleClass>
                                     <SubTitleTwo><h1>Diretor Acadêmico</h1></SubTitleTwo> 
                                 </Block>  
                             </BlockFive>

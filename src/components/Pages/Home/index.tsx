@@ -91,6 +91,7 @@ export function Home(){
             subtitle:'<div><h5>Curso regular, aulas de conversação, inglês para negócios, e o que mais você precisar.</h5></div>'
         }
     ]
+
     const depoiments = [
         {
             name:"Lílian Carvalho ",
@@ -141,6 +142,7 @@ export function Home(){
             image:isMobile ? 'https://ik.imagekit.io/6zjortsiwu/tr:w-300/Kleber.webp':'https://ik.imagekit.io/6zjortsiwu/Kleber.webp',
         }
     ]
+
     useEffect(()=>{
         slide_wrapper.current?
         setWidth(slide_wrapper.current.scrollWidth - slide_wrapper.current.offsetWidth):undefined
@@ -153,6 +155,7 @@ export function Home(){
         }
         emailjs.send('service_xkzbnlg', 'template_rf5wgp9', params, '50tNXyTFF0JinzHnv')
     }
+    
     return (
     <Container> 
        <Header/>
