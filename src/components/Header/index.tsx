@@ -50,9 +50,11 @@ export function Header(){
                         <Blockx 
                             as={motion.div} 
                             animate={{x:show?0:300, opacity:show?1:0}}
+                            initial={{x:300}}
                             transition={{
-                                duration:0.5,
+                                duration:0.3
                             }}
+                            
                         >
                             <Menu>
                                 <BlockTwo>
@@ -74,9 +76,9 @@ export function Header(){
                     <BlockMenu
                         as={motion.div} 
                         animate={{x:!show?0:400}}
-                        initial={{x:0,}}
+                        initial={{x:300}}
                         transition={{
-                            duration:0.4
+                            duration:0
                         }}
                         exit={{opacity:0}}
                     >

@@ -164,6 +164,7 @@ export const Title = styled.div`
 
 export const TitleTwo = styled.div`
   max-width: 800px;
+  font-display;
   & h1{
       font-family: 'Baloo 2';
       font-size: 5vw;

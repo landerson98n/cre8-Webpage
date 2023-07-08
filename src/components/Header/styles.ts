@@ -58,8 +58,6 @@ export const  Blockx = styled.div`
   align-items: center;
   justify-content: end;
   position: relative;
-  
-
 
   @media only screen and (min-width: 630px){
     display: none;
