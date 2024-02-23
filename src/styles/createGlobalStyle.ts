@@ -12,7 +12,6 @@ export default createGlobalStyle`
     min-width: 100%;
     min-height: 100%;
     font-size: 10px;
-    font-display: swap
   }
   h1, h2, h3, h4, h5, h6 {
     font-weight: 400;

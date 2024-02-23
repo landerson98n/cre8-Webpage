@@ -146,6 +146,7 @@ export const Title = styled.div`
       font-weight: 700;
       color: white;
       text-align: center;
+      font-display: swap;
     }
     & h2{
       font-family: 'Baloo 2';
@@ -153,6 +154,7 @@ export const Title = styled.div`
       font-weight: 700;
       color: var(--text_detail);
       text-align: center;
+      font-display: swap;
     }
     
     @media only screen and (max-width: 425px) {
@@ -171,13 +173,15 @@ export const TitleTwo = styled.div`
       font-weight: 700;
       color: white;
       text-align: left;
-    }
+      font-display: swap;
+    };
     & b{
       font-family: 'Baloo 2';
       font-size: 5vw;
       font-weight: 700;
       color: var(--text_detail);
       text-align: left;
+      font-display: swap;
     }
 
    
@@ -191,6 +195,7 @@ export const TitleBlue = styled.div`
       font-weight: 700;
       color: var(--background_blue);
       text-align: left;
+      font-display: swap;
     }
   
   @media only screen and (max-width: 425px) {
@@ -209,6 +214,7 @@ export const SubTitle = styled.div`
       font-weight: 400;
       color: white;
       text-align: center;
+      font-display: swap;
     }
    & h2{
       font-family: 'Be Vietnam Pro';
@@ -217,6 +223,7 @@ export const SubTitle = styled.div`
       color: white;
       text-align: center;
       margin-bottom: 35px;
+      font-display: swap;
    } 
    iframe{
     width:30%;

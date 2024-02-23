@@ -27,27 +27,28 @@ const router = createBrowserRouter([
     element: <Equipe/>,
   },
 ]);
-
-
+  appLoading.setColor('black')
+  ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+    appLoading.start()  
+  )
+  
   WebFont.load({
         google: {
-          families: ['Baloo 2:bold', 'Be Vietnam Pro: bold']
-        },
-        loading(){
-          appLoading.start()
+          families: ['Baloo 2:bold', 'Be Vietnam Pro: bold'], 
+
         },
         active(){
           appLoading.stop()
-          ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-            <>
-              <React.StrictMode>
-                <RouterProvider router={router} />
-              </React.StrictMode>
-              <GlobalStyle/>
-            </>   
-          )
+          
         }
   });
+
+  ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+    <>
+      <RouterProvider router={router} />
+      <GlobalStyle/>
+    </>   
+  )
   
 
 
