@@ -169,7 +169,7 @@ export const TitleTwo = styled.div`
   font-display;
   & h1{
       font-family: 'Baloo 2';
-      font-size: 5vw;
+      font-size: 3vw;
       font-weight: 700;
       color: white;
       text-align: left;
@@ -177,7 +177,7 @@ export const TitleTwo = styled.div`
     };
     & b{
       font-family: 'Baloo 2';
-      font-size: 5vw;
+      font-size: 3vw;
       font-weight: 700;
       color: var(--text_detail);
       text-align: left;
@@ -191,7 +191,7 @@ export const TitleBlue = styled.div`
   width: 100%;
   & h1{
       font-family: 'Baloo 2';
-      font-size: 6vw;
+      font-size: 4vw;
       font-weight: 700;
       color: var(--background_blue);
       text-align: left;
@@ -305,7 +305,7 @@ export const SubTitleTwo = styled.div`
 
   & h5{
       font-family: 'Be Vietnam Pro';
-      font-size: 3vw;
+      font-size: 2vw;
       font-weight: 400;
       color: var(--background_blue);
       text-align: center;
@@ -317,7 +317,7 @@ export const SubTitleTwo = styled.div`
     }
   & h1{
       font-family: 'Be Vietnam Pro';
-      font-size: 2.4vw;
+      font-size: 1.2vw;
       font-weight: 400;
       color: white;
       text-align: center;
@@ -326,7 +326,7 @@ export const SubTitleTwo = styled.div`
 
     & h3{
       font-family: 'Be Vietnam Pro';
-      font-size: 1.9vw;
+      font-size: 1.6vw;
       font-weight: 400;
       color: white;
       text-align: center;
@@ -335,7 +335,7 @@ export const SubTitleTwo = styled.div`
     }
     & h2{
       font-family: 'Be Vietnam Pro';
-      font-size: 2.5vw;
+      font-size: 1.3vw;
       font-weight: 400;
       color: white;
       text-align: center;
@@ -360,7 +360,7 @@ export const SubTitleBlue = styled.div`
   
   & h1{
       font-family: 'Be Vietnam Pro';
-      font-size: 3vw;
+      font-size: 2vw;
       font-weight: 400;
       color: var(--background_blue);
       text-align: left;
@@ -389,14 +389,15 @@ export const Stars = styled.div`
   width: 100%;
   align-items: center;
   justify-content: center;
-  padding-top: 10%;
+  padding-top: 11%;
 `
 
 export const Content = styled.div`
   width: 100%;
   height: 120vw;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top:10%
 `
 
 
@@ -404,8 +405,8 @@ export const Content = styled.div`
 export const ImageCourse = styled.img`
   width: 100%;
   height:100%;
-  max-width: 25vw;
-  max-height: 25vw;
+  max-width: 15vw;
+  max-height: 15vw;
   margin-right: 10%;
   margin-left: 10%;
   
@@ -423,7 +424,7 @@ export const ContentContainer = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
-  height: 11vw;
+  height: 5vw;
   background-color: var(--background_blue);
   border-radius: 2vw;
   margin-top: 2vw;
@@ -446,7 +447,7 @@ export const Persons = styled.div`
 `
 export const Explanation = styled.div`
   width: 100%;
-  height: 95vw;
+  height: 70vw;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 5vw;
@@ -460,7 +461,7 @@ export const  Schedule = styled.div`
   justify-items: center;
   background-color: var(--background_blue);
   width: 100%;
-  height: 50vw;
+  height: 30vw;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 2%;
@@ -480,7 +481,7 @@ export const Information = styled.div`
 export const BlockTwo = styled.div`
   display: flex;
   align-items: center;
-  margin-top: 10vw;
+  margin-top: 5vw;
   width: 100%;
   @media only screen and (max-width: 1196px) {
       margin-top: 3%;
@@ -510,13 +511,13 @@ export const Curses = styled.div`
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 5%;
-  height: 230vw;
+  height: 140vw;
   
 `
 export const  ClassOne = styled.div`
   background-color: #2B69DB;
   width: 100%;
-  height: 60vw;
+  height: 35vw;
   border-radius: 43px;
   margin-top: 10%;
   margin-bottom: 10%;
@@ -531,7 +532,7 @@ export const  TitleClass = styled.div`
     padding-top: 2%;
    & h1{
       font-family: 'Baloo 2';
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: 700;
       color: white;
       text-align: center;
@@ -614,7 +615,7 @@ export const  TitleClassTwo = styled.div`
     margin-bottom:30px;
    & h1{
       font-family: 'Baloo 2';
-      font-size: 7vw;
+      font-size: 4vw;
       font-weight: 700;
       color: #71A7ED;
       text-align: left;
@@ -625,7 +626,7 @@ export const Lista = styled.div`
   margin-right: 2%;
   & li{ 
       font-family: 'Be Vietnam Pro';
-      font-size: 2.7vw;
+      font-size: 1.5vw;
       font-weight: 400;
       color: white;
   }
@@ -634,7 +635,7 @@ export const Lista = styled.div`
 export const ClassTwo = styled.div`
   background-color: #2B69DB;
   width: 100%;
-  height: 60vw;
+  height: 35vw;
   border-radius: 43px;
   justify-content: center;
   margin-bottom: 10%;
@@ -648,7 +649,7 @@ export const ClassTwo = styled.div`
 export const ClassThree = styled.div`
   background-color: #2B69DB;
   width: 100%;
-  height: 60vw;
+  height: 35vw;
   border-radius: 43px;
   justify-content: center;
 
@@ -664,11 +665,11 @@ export const ImageTwo = styled.img`
 `
 export const Depoiments = styled.div`
   width: 100%;
-  height: 75vw;
+  height: 20vw;
   padding-left: 10%;
   padding-right: 10%;
   margin-top: 10%;
-  margin-bottom: 20%;
+  margin-bottom: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -689,7 +690,7 @@ export const Person = styled.div`
   display: flex;
   justify-items: center;
   background-color:var(--background_blue);
-  height: 80vw;
+  height: 46vw;
   border-radius: 2vw;
   margin-right: 4%;
 
@@ -701,8 +702,8 @@ export const ImagePerson = styled.img`
   object-fit: cover;
   height: 100%;
   width: 100%;
-  max-height: 25vw;
-  max-width: 25vw;
+  max-height: 12vw;
+  max-width: 12vw;
   border-radius: 100%;
   margin-bottom: 3%;
   

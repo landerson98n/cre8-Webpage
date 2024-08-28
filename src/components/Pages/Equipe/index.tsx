@@ -14,23 +14,23 @@ import {
     TitleClass
 } from './styles'
 
-export function Equipe(){
-    return(
-        <div style={{overflow: 'hidden'}}>
-         <Header/>
+export function Equipe() {
+    return (
+        <div style={{ overflow: 'hidden' }}>
+            <Header />
             <Container id='equipe'>
                 <Block>
-                <Title>
-                    <h1>Conheça a nossa equipe!</h1>
-                </Title>
+                    <Title>
+                        <h1>Conheça a nossa equipe!</h1>
+                    </Title>
                     <Equipes>
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="saulo" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/saulo.webp'/>
+                                <ImagePerson alt="saulo" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/saulo.webp' />
                                 <Block>
                                     <TitleClass><h1>Teacher Saulo</h1></TitleClass>
-                                    <SubTitleTwo><h1>Diretor Acadêmico</h1></SubTitleTwo> 
-                                </Block>  
+                                    <SubTitleTwo><h1>Diretor Acadêmico</h1></SubTitleTwo>
+                                </Block>
                             </BlockFive>
                             <Lista>
                                 <ul>
@@ -52,57 +52,18 @@ export function Equipe(){
 
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Teacher Camilo" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/camilo.webp'/>
-                                <Block>
-                                    <TitleClass><h1>Teacher Camilo</h1></TitleClass>
-                                    <SubTitleTwo><h1>Experiência como professor em diversos níveis e contextos.</h1></SubTitleTwo> 
-                                </Block>  
-                            </BlockFive>
-                            <Lista>
-                                <ul>
-                                    <li>8 anos de experiência</li>
-                                    <li>Graduado em Inglês</li>
-                                    <li>Mestrando em Linguística Aplicada</li>
-                                    <li>C1 Proficiency (University of Cambridge)</li>
-                                    <li>Curiosidade: 
-O que mais lhe traz prazer é ver o mar, viajar e cozinhar como um exercício de mindfulness.</li>
-                                </ul>
-                            </Lista>
-                        </Person>
-
-                        <Person>
-                            <BlockFive>
-                            <ImagePerson alt="Teacher Lorena" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/lorena.webp'/>
-                                <Block>
-                                    <TitleClass><h1>Teacher Lorena</h1></TitleClass>
-                                    <SubTitleTwo><h1>Experiência com educação internacional</h1></SubTitleTwo> 
-                                </Block>  
-                            </BlockFive>
-                            <Lista>
-                                <ul>
-                                    <li>4 anos de experiência</li>
-                                    <li>Graduada em Inglês</li>
-                                    <li>Certificada TEP (Teacher Education Program)</li>
-                                    <li>Curiosidade:
-Tem um estilo vintage, ama a cultura francesa, sabe dirigir caminhões, e é provavelmente a pessoa mais indecisa do mundo.</li>
-                                </ul>
-                            </Lista>
-                        </Person>
-
-                        <Person>
-                            <BlockFive>
-                            <ImagePerson alt="Teacher Fabiana" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/fabiana.webp'/>
+                                <ImagePerson alt="Teacher Fabiana" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/fabiana.webp' />
                                 <Block>
                                     <TitleClass><h1>Teacher Fabiana</h1></TitleClass>
-                                    <SubTitleTwo><h1>Experiência com ambiente corporativo internacional</h1></SubTitleTwo> 
-                                </Block>  
+                                    <SubTitleTwo><h1>Experiência com ambiente corporativo internacional</h1></SubTitleTwo>
+                                </Block>
                             </BlockFive>
                             <Lista>
                                 <ul>
                                     <li>6 anos de experiência como professora</li>
                                     <li>C1 Certificate (The Gallery London)</li>
                                     <li>Psicologia(Cursando)</li>
-                                
+
                                     <li>Curiosidade: Já viveu na Áustria e na Espanha, trabalhando na maior organização jovem do mundo. Ama basquete, música e o cérebro humano.</li>
                                 </ul>
                             </Lista>
@@ -110,11 +71,11 @@ Tem um estilo vintage, ama a cultura francesa, sabe dirigir caminhões, e é pro
 
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Teacher Werllison" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/werllison.webp'/>
+                                <ImagePerson alt="Teacher Werllison" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/werllison.webp' />
                                 <Block>
                                     <TitleClass><h1>Teacher Werllison</h1></TitleClass>
-                                    <SubTitleTwo><h1>Experiência como Supervisor de Exames de Cambridge</h1></SubTitleTwo> 
-                                </Block>  
+                                    <SubTitleTwo><h1>Experiência como Supervisor de Exames de Cambridge</h1></SubTitleTwo>
+                                </Block>
                             </BlockFive>
                             <Lista>
                                 <ul>
@@ -123,57 +84,162 @@ Tem um estilo vintage, ama a cultura francesa, sabe dirigir caminhões, e é pro
                                     <li>Letras - Inglês</li>
                                     <li>Experiência como Supervisor de Exames de Cambridge</li>
                                     <li>Curiosidade:
-É apaixonado por viagens, aviação, estudar outros idiomas e é um ótimo jogador de vôlei.</li>
+                                        É apaixonado por viagens, aviação, estudar outros idiomas e é um ótimo jogador de vôlei.</li>
                                 </ul>
                             </Lista>
                         </Person>
 
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Sara Xavier" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/sara.webp'/>
+                                <ImagePerson alt="Teacher Lucas" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/lucas.jpeg' />
                                 <Block>
-                                    <TitleClass><h1>Sara Xavier</h1></TitleClass>
-                                    <SubTitleTwo><h1>Experiência com design, social media e community management</h1></SubTitleTwo>
-                                    
-
-                                </Block>  
+                                    <TitleClass><h1>Teacher Lucas</h1></TitleClass>
+                                    <SubTitleTwo><h1>Experiência com Inglês Acadêmico</h1></SubTitleTwo>
+                                </Block>
                             </BlockFive>
                             <Lista>
                                 <ul>
-                                    <li>3 anos de experiência como designer freelancer com foco em redes sociais</li>
-                                    <li>Graduada em Comunicação Social (Universidade Federal do Piauí)</li>
-                                    <li>Design Gráfico(Escola Britânica de Artes Criativas)</li>
-                                    <li>Design Gráfico(FIAP On)</li>
-                                    <li>Curiosidade
-                                    Além de designer, é vegetariana e, como hobbies, curte livros e animes.</li>
+                                    <li>5 anos de experiência como professor</li>
+                                    <li>Graduado em Inglês</li>
+                                    <li>Experiência com pesquisa acadêmica, publicação de artigos, e tem um livro publicado</li>
+                                    <li>Curiosidade: Ama jogos, cultura geek, literatura clássica, teatro grego e estuda latim clássico.</li>
                                 </ul>
                             </Lista>
-                        </Person> 
+                        </Person>
 
-                        
                         <Person>
                             <BlockFive>
-                            <ImagePerson alt="Gustavo" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/gustavo.webp'/>
+                                <ImagePerson alt="Teacher Weslley" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/wesley.jpeg' />
                                 <Block>
-                                    <TitleClass><h1>Teacher Gustavo</h1></TitleClass>
-                                    <SubTitleTwo><h1>Experiência com Inglês corporativo/para negócios</h1></SubTitleTwo>
-
-                                </Block>  
+                                    <TitleClass><h1>Teacher Weslley</h1></TitleClass>
+                                    <SubTitleTwo><h1>Experiência com Educação Internacional</h1></SubTitleTwo>
+                                </Block>
                             </BlockFive>
                             <Lista>
                                 <ul>
-                                    <li>7 anos de experiência </li>
-                                    <li>Graduado em geologia</li>
-                                    <li>TOEIC C1 (ETS)</li>
-                                    <li>Curiosidade: ama vôlei, ficar em casa e viajar.</li>
+                                    <li>10 anos de experiência</li>
+                                    <li>Graduado em Inglês</li>
+                                    <li>Certificado internacionalmente em Sign Language e Drama</li>
+                                    <li>Experiência como Supervisor de Exames de Cambridge</li>
+                                    <li>Curiosidade: Ama cozinhar, viajar e canta, e já morou nos Estados Unidos e na Holanda.</li>
                                 </ul>
                             </Lista>
-                        </Person> 
+                        </Person>
+
+                        <Person>
+                            <BlockFive>
+                                <ImagePerson alt="Teacher Carolina" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/carolina.jpeg' />
+                                <Block>
+                                    <TitleClass><h1>Teacher Carolina</h1></TitleClass>
+                                    <SubTitleTwo><h1>Experiência em Educação Internacional e Corporativa
+                                    </h1></SubTitleTwo>
+                                </Block>
+                            </BlockFive>
+                            <Lista>
+                                <ul>
+                                    <li>5 anos de experiência como professora de Inglês</li>
+                                    <li>Experiência em educação internacional</li>
+                                    <li>Doutoranda em Engenharia da Computação no ITA</li>
+                                    <li>Curiosidade: Já viveu três anos na Ásia ensinando Inglês, fazendo doutorado e é mestre nos chopsticks</li>
+                                </ul>
+                            </Lista>
+                        </Person>
+
+                        <Person>
+                            <BlockFive>
+                                <ImagePerson alt="Teacher Caroline" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/caroline.jpeg' />
+                                <Block>
+                                    <TitleClass><h1>Teacher Caroline</h1></TitleClass>
+                                    <SubTitleTwo><h1>Experiência com Inglês Acadêmico
+                                    </h1></SubTitleTwo>
+                                </Block>
+                            </BlockFive>
+                            <Lista>
+                                <ul>
+                                    <li>12 anos de experiência como professora de Inglês
+                                    </li>
+                                    <li>Graduada em Francês</li>
+                                    <li>Relações Internacionais (Cursando)
+                                    </li>
+                                    <li>Tradutora e revisora</li>
+                                    <li>Teaching Knowledge</li>
+                                    <li>Test 1, 2, 3 & CLIL (University of Cambridge)
+                                    </li>
+                                    <li>TOEFL iTP B2</li>
+                                    <li>TOEFL iTP B2
+                                    </li>
+                                    <li>Curiosidade: Adora viajar, sambar e comer bem. Fã da Queen Bey e apaixonada pelo som dos anos 80.
+                                    </li>
+                                </ul>
+                            </Lista>
+                        </Person>
+
+                        <Person>
+                            <BlockFive>
+                                <ImagePerson alt="Teacher Matheus" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/matheus.jpeg' />
+                                <Block>
+                                    <TitleClass><h1>Teacher Matheus</h1></TitleClass>
+                                    <SubTitleTwo><h1>Experiência com Inglês Corporativo
+
+                                    </h1></SubTitleTwo>
+                                </Block>
+                            </BlockFive>
+                            <Lista>
+                                <ul>
+                                    <li>4 anos de experiência como professor
+                                    </li>
+                                    <li>Tradutor e Engenheiro civil
+                                    </li>
+                                    <li>Experiência com Business English
+                                    </li>
+                                    <li>Curiosidade:
+                                        Já viveu 3 anos na Espanha, toca guitarra, surfa e tem um canal de jogos no Youtube.
+                                    </li>
+
+                                </ul>
+                            </Lista>
+                        </Person>
+
+                        <Person>
+                            <BlockFive>
+                                <ImagePerson alt="Letícia Rocha" src='https://ik.imagekit.io/6zjortsiwu/tr:w-300/leticia.jpeg' />
+                                <Block>
+                                    <TitleClass><h1>Letícia Rocha</h1></TitleClass>
+                                    <SubTitleTwo><h1>Designer do time
+
+                                    </h1></SubTitleTwo>
+                                </Block>
+                            </BlockFive>
+                            <Lista>
+                                <ul>
+                                    <li>5 anos de experiência como designer freelancer com foco em redes sociais
+
+                                    </li>
+                                    <li>Graduada em Comunicação Social
+                                        (Universidade Federal do Piauí)
+
+                                    </li>
+                                    <li>Design Gráfico
+                                        (Opa! Escola de Design)
+
+                                    </li>
+                                    <li>Adobe Illustrator
+                                        (EBAC)
+
+                                    </li>
+                                    <li>Curiosidade:Além de designer, também trabalha como ilustradora freelancer e é apaixonada por arte.
+
+
+                                    </li>
+
+                                </ul>
+                            </Lista>
+                        </Person>
                     </Equipes>
                 </Block>
             </Container>
-            <Foot/>
+            <Foot />
         </div>
-       
+
     )
 }

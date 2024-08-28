@@ -253,9 +253,9 @@ export function Home(){
         </Depoiments>
     
         <Explanation>
-            <TitleBlue><h1 style={{fontSize:'6vw'}}>Por que escolher a cre8?</h1></TitleBlue>
+            <TitleBlue><h1 style={{fontSize:'4vw'}}>Por que escolher a cre8?</h1></TitleBlue>
             <SubTitleBlue >
-                    <h1 style={{fontSize:'3vw'}}><em>Fale Inglês desde sua primeira aula!</em></h1>
+                    <h1 style={{fontSize:'2vw'}}><em>Fale Inglês desde sua primeira aula!</em></h1>
             </SubTitleBlue>
 
             <div style={{width:'100%', marginTop:'5vw'}}>
@@ -264,7 +264,7 @@ export function Home(){
                     
                     <div style={{display:'flex', marginTop:'0.3vw'}}>
                         <SubTitleBlue>
-                                <h1 style={{fontSize:'2.5vw'}}>Sem fórmula mágica, sem método milagroso, sem plataforma que você vai
+                                <h1 style={{fontSize:'1.7vw'}}>Sem fórmula mágica, sem método milagroso, sem plataforma que você vai
                                     parar de acessar no primeiro mês.</h1>
                         </SubTitleBlue>
                     </div>
