@@ -1,7 +1,7 @@
-import styled, {css} from "styled-components"
+import styled, { css } from "styled-components"
 import Close from '@mui/icons-material/Close'
 import Right from '@mui/icons-material/Check'
-import  IMaskInput  from "react-input-mask";
+import IMaskInput from "react-input-mask";
 import whats from '@mui/icons-material/WhatsApp'
 
 import star from '@mui/icons-material/Star'
@@ -10,7 +10,7 @@ export const Container = styled.div`
   flex:1;
   overflow: hidden;
 
- `; 
+ `;
 
 const iconCSS = css`
 color:white;
@@ -87,7 +87,7 @@ export const InputText = styled.input`
     width: 100%;
     font-size: 170%;
   }
-`; 
+`;
 
 
 export const BlockEi = styled.div`
@@ -102,7 +102,7 @@ export const BlockEi = styled.div`
 
 export const IconStar = styled(star)`
     ${iconCSS}
-`; 
+`;
 
 export const Hero = styled.div`
     display: flex;
@@ -394,7 +394,7 @@ export const Stars = styled.div`
 
 export const Content = styled.div`
   width: 100%;
-  height: 120vw;
+  height: 100vw;
   padding-left: 20%;
   padding-right: 20%;
   margin-top:10%
@@ -454,7 +454,7 @@ export const Explanation = styled.div`
 `
 
 
-export const  Schedule = styled.div`
+export const Schedule = styled.div`
   display: flex;
   margin-top: 100px;
   align-items: center;
@@ -473,7 +473,7 @@ export const Block = styled.div`
 export const Information = styled.div`
     width: 100%;
     background-color: white;
-    height: 30vw;
+    height: 25vw;
     margin-bottom: 10%;
     border-radius: 20px;
 `
@@ -514,7 +514,7 @@ export const Curses = styled.div`
   height: 140vw;
   
 `
-export const  ClassOne = styled.div`
+export const ClassOne = styled.div`
   background-color: #2B69DB;
   width: 100%;
   height: 35vw;
@@ -525,7 +525,7 @@ export const  ClassOne = styled.div`
     border-radius: 14px;
   }
 `
-export const  TitleClass = styled.div`
+export const TitleClass = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
@@ -610,7 +610,7 @@ export const Foot = styled.div`
   border-top: 1px #fff;
 `
 
-export const  TitleClassTwo = styled.div`
+export const TitleClassTwo = styled.div`
     width: 100%;
     margin-bottom:30px;
    & h1{
